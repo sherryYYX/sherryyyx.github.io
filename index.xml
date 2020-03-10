@@ -32,6 +32,76 @@
     </item>
     
     <item>
+      <title>第三篇文章</title>
+      <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      
+        <description>&lt;h1 id=&#34;如何用-hugo-搭建个人博客&#34;&gt;如何用 hugo 搭建个人博客&lt;/h1&gt;
+&lt;h2 id=&#34;mac-用户&#34;&gt;Mac 用户&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装hugo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;brew install hugo
+hugo version
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建新的环境&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new site xxx.github.io-creator
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;添加主题&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd xxx.github.io-creator
+git init
+xxxxxxxxx //主题下载地址
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置主题名&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;新建文章&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new post/my first page.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;写文章，将 &lt;code&gt;draft: true&lt;/code&gt; 改为 ``draft: false`&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 http://localhost:1313/ ，会看到一个示例网站。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;配置好&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;文章写在&lt;code&gt;./content/post&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行&lt;code&gt;hugo -D&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;cd pablic/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git commit -v&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;说明&#34;&gt;说明&lt;/h2&gt;
+&lt;p&gt;具体操作参照hugo官方文档&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>第二篇文章</title>
       <link>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:33:09 +0800</pubDate>

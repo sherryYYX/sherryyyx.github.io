@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Mar 2020 13:33:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 13:52:40 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>第三篇文章</title>
+      <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <description>如何用 hugo 搭建个人博客 Mac 用户 安装hugo brew install hugo hugo version 创建新的环境 hugo new site xxx.github.io-creator 添加主题 cd xxx.github.io-creator git init xxxxxxxxx //主题下载地址 设置主题名 echo echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 新建文章 hugo new post/my</description>
+    </item>
     
     <item>
       <title>第二篇文章</title>
