@@ -32,6 +32,69 @@
     </item>
     
     <item>
+      <title>HTML入门笔记1</title>
+      <link>http://localhost:1313/post/fourth/</link>
+      <pubDate>Tue, 10 Mar 2020 15:16:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/fourth/</guid>
+      
+        <description>&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;
+&lt;h3 id=&#34;1html-是谁发明的&#34;&gt;1.HTML 是谁发明的&lt;/h3&gt;
+&lt;p&gt;李爵士&lt;/p&gt;
+&lt;h3 id=&#34;2html-起手应该写什么&#34;&gt;2.HTML 起手应该写什么&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3常用的表章节的标签有哪些分别是什么意思h1h6sectionarticlemainaside-等等&#34;&gt;3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section、article、main、aside 等等）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;h1-h6 标题标签&lt;/li&gt;
+&lt;li&gt;section 章节标签&lt;/li&gt;
+&lt;li&gt;article 文章标签&lt;/li&gt;
+&lt;li&gt;main 主要内容&lt;/li&gt;
+&lt;li&gt;aside 旁支内容&lt;/li&gt;
+&lt;li&gt;p 段落&lt;/li&gt;
+&lt;li&gt;header 头部&lt;/li&gt;
+&lt;li&gt;footer 脚部&lt;/li&gt;
+&lt;li&gt;div 划分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4全局属性有哪些&#34;&gt;4.全局属性有哪些&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;class&lt;/li&gt;
+&lt;li&gt;id&lt;/li&gt;
+&lt;li&gt;style&lt;/li&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;contenteditable&lt;/li&gt;
+&lt;li&gt;hidden&lt;/li&gt;
+&lt;li&gt;tabindex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5常用的内容标签有哪些分别是什么意思astrongemcodepre-等等&#34;&gt;5.常用的内容标签有哪些，分别是什么意思（a、strong、em、code、pre 等等）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ol+li (ordered list, list item 列表中的一项)&lt;/li&gt;
+&lt;li&gt;ul+li (unordered list, 同上)&lt;/li&gt;
+&lt;li&gt;dl+dt+dd (d:description, list + term + data)&lt;/li&gt;
+&lt;li&gt;pre (用于保留空格，换行)&lt;/li&gt;
+&lt;li&gt;hr （分割线）&lt;/li&gt;
+&lt;li&gt;br （换行）&lt;/li&gt;
+&lt;li&gt;a （超链接）&lt;/li&gt;
+&lt;li&gt;em （emphasis 强调）&lt;/li&gt;
+&lt;li&gt;strong(重要)&lt;/li&gt;
+&lt;li&gt;code （默认字体等宽）&lt;/li&gt;
+&lt;li&gt;quote(引用)&lt;/li&gt;
+&lt;li&gt;blockquote(块级引用)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>第三篇文章</title>
       <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
