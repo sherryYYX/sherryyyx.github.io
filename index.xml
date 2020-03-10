@@ -32,6 +32,129 @@
     </item>
     
     <item>
+      <title>HTML常用标签</title>
+      <link>http://localhost:1313/post/fifth/</link>
+      <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/fifth/</guid>
+      
+        <description>&lt;h2 id=&#34;a-标签的用法&#34;&gt;a 标签的用法&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;属性&#34;&gt;属性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;href&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;取值有网址、路径、伪协议&lt;/li&gt;
+&lt;li&gt;作用 跳到外部连接、内部锚点、邮箱电话&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;target&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt;  target=&amp;quot;_nblank&amp;quot; 在空白页打开
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt; target=&amp;quot;_top&amp;quot; 在顶级窗口打开
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt; target=&amp;quot;_parent&amp;quot; 在当前界面iframe的上一层打开
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt; target=&amp;quot;_self&amp;quot; 在自己页面
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;img-标签的用法&#34;&gt;img 标签的用法&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;lt;img src=&amp;quot;dog.jpg&amp;quot; alt=&amp;quot;狗&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;发出get请求，展示图片&lt;/p&gt;
+&lt;h3 id=&#34;属性-1&#34;&gt;属性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;alt：aternative 替换 当图片无法加载时，用于补救。&lt;/li&gt;
+&lt;li&gt;width/height：图片宽高&lt;/li&gt;
+&lt;li&gt;src：source 图片地址来源&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;table-标签的用法&#34;&gt;table 标签的用法&lt;/h2&gt;
+&lt;p&gt;分为三部分：&lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;lt;table&amp;gt;
+        &amp;lt;thead&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
+                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/thead&amp;gt;
+        &amp;lt;tbody&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/tbody&amp;gt;
+        &amp;lt;tfoot&amp;gt;
+            &amp;lt;tr&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
+            &amp;lt;/tr&amp;gt;
+        &amp;lt;/tfoot&amp;gt;
+    &amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;tr标签：table row 表行&lt;/li&gt;
+&lt;li&gt;th标签：table head 表头标题&lt;/li&gt;
+&lt;li&gt;td标签：table data 内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;样式&#34;&gt;样式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;table-layout : auto;  自动调节&lt;/li&gt;
+&lt;li&gt;border-collapse: collapse; 合并边框&lt;/li&gt;
+&lt;li&gt;border-spacing：0; 边框之间的距离&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;form-表单标签&#34;&gt;form 表单标签&lt;/h3&gt;
+&lt;p&gt;发get或post请求，然后刷新页面&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;lt;form action=&amp;quot;/xxx&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
+        &amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt;
+        &amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;
+    &amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;属性-2&#34;&gt;属性&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;action: 控制请求那个页面&lt;/li&gt;
+&lt;li&gt;method: 控制请求方式&lt;/li&gt;
+&lt;li&gt;autocomplete：自动填充&lt;/li&gt;
+&lt;li&gt;target： 同href&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;input和button&#34;&gt;input和button&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;input 让用户输入，不能加其他&lt;/li&gt;
+&lt;li&gt;button 可以加其他（图片）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;input属性type&#34;&gt;input属性type&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;button&lt;/li&gt;
+&lt;li&gt;checkbox 多选&lt;/li&gt;
+&lt;li&gt;password&lt;/li&gt;
+&lt;li&gt;radio 单选&lt;/li&gt;
+&lt;li&gt;submit 提交&lt;/li&gt;
+&lt;li&gt;text&lt;/li&gt;
+&lt;li&gt;file 文件&lt;/li&gt;
+&lt;li&gt;hidden&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;其他输入标签textareaselectoption&#34;&gt;其他输入标签textarea、select+option&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;    &amp;lt;select name=&amp;quot;location&amp;quot; id=&amp;quot;1&amp;quot;&amp;gt;
+                &amp;lt;option value=&amp;quot;sh&amp;quot;&amp;gt;上海&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;bj&amp;quot;&amp;gt;北京&amp;lt;/option&amp;gt;
+                &amp;lt;option value=&amp;quot;cd&amp;quot;&amp;gt;成都&amp;lt;/option&amp;gt;
+    &amp;lt;/select&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;注意&#34;&gt;注意&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;form 里面的input要有name&lt;/li&gt;
+&lt;li&gt;form 要有type=submit才能触发submit事件&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>HTML入门笔记1</title>
       <link>http://localhost:1313/post/fourth/</link>
       <pubDate>Tue, 10 Mar 2020 15:16:07 +0800</pubDate>

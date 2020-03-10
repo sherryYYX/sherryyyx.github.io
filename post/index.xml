@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Mar 2020 15:16:07 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 20:08:39 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://localhost:1313/post/fifth/</link>
+      <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/fifth/</guid>
+      <description>a 标签的用法 &amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt; 属性 href 取值有网址、路径、伪协议 作用</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
