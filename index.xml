@@ -32,6 +32,31 @@
     </item>
     
     <item>
+      <title>简述 CSS 盒模型是什么</title>
+      <link>http://localhost:1313/post/sixth/</link>
+      <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sixth/</guid>
+      
+        <description>&lt;h2 id=&#34;简述-css-盒模型是什么&#34;&gt;简述 CSS 盒模型是什么&lt;/h2&gt;
+&lt;h3 id=&#34;css盒模型分为两种&#34;&gt;css盒模型分为两种&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;content box&lt;/li&gt;
+&lt;li&gt;boder box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一个盒子由四部分组成&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;content 内容&lt;/li&gt;
+&lt;li&gt;padding 内边距&lt;/li&gt;
+&lt;li&gt;boder    边框&lt;/li&gt;
+&lt;li&gt;margin   外边距&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;./image/1.jpg&#34; alt=&#34;两种盒模型&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>HTML常用标签</title>
       <link>http://localhost:1313/post/fifth/</link>
       <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
