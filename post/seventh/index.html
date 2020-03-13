@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - 小王子的博客</title>
+  <title>CSS 知识总结 - 小王子的博客</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="小王子" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.66.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/" />
-<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="小王子的博客" />
+<link rel="canonical" href="http://localhost:1313/post/seventh/" />
+
 
 
 
@@ -58,15 +59,23 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/post/" />
-<meta property="og:updated_time" content="2020-03-13T17:23:51+08:00" />
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="CSS 知识总结" />
+<meta property="og:description" content="css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/seventh/" />
+<meta property="article:published_time" content="2020-03-13T17:23:51+08:00" />
+<meta property="article:modified_time" content="2020-03-13T17:23:51+08:00" />
+<meta itemprop="name" content="CSS 知识总结">
+<meta itemprop="description" content="css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，">
+<meta itemprop="datePublished" content="2020-03-13T17:23:51&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-13T17:23:51&#43;08:00" />
+<meta itemprop="wordCount" content="769">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSS 知识总结"/>
+<meta name="twitter:description" content="css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -244,7 +253,7 @@
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -325,125 +334,267 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
-    <div class="archive-title">
-      <span class="archive-post-counter">
-          共计 7 篇文章
-      </span>
-    </div>
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2020</h2>
+    <header class="post-header">
+      <h1 class="post-title">CSS 知识总结</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-03-13" class="post-time">
+          2020-03-13
+        </time>
+        
+        
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2020-03-13" class="archive-post-time">
-        2020-03-13
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/seventh/" class="archive-post-link">
-          CSS 知识总结
-        </a>
-      </span>
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1float布局">1.float布局</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#2flex布局">2.flex布局</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#grid布局">grid布局</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#position">position</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#浏览器渲染过程">浏览器渲染过程</a></li>
+    <li><a href="#transform变形">transform（变形）</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#transition过渡">transition过渡</a></li>
+    <li><a href="#animation">animation</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <h1 id="css布局">css布局</h1>
+<h2 id="1float布局">1.float布局</h2>
+<ul>
+<li>子元素上加 <code>float:left和width</code></li>
+<li>在父元素上加<code>.clearfix</code></li>
+</ul>
+<pre><code>    .clearfix::after{
+        content:'';
+        display:block;
+        clear:both;
+}
+</code></pre><h4 id="注意">注意</h4>
+<ul>
+<li>float要自己计算宽度，不灵活</li>
+<li>float在IE6/7有双倍margin bug，加<code>display: inline-block;</code></li>
+<li>用于IE足矣</li>
+<li>float平面布局，要用<code>-margin</code></li>
+<li>居中：
+<pre><code>    margin-left:auto;
+    margin-right:auto;
+</code></pre></li>
+</ul>
+<h2 id="2flex布局">2.flex布局</h2>
+<ol>
+<li>让一个元素变成flex容器
+<pre><code>    .comtainer{
+        display: flex;
+    }
+</code></pre></li>
+<li>改变流动方向
+flex-direction:row / column</li>
+<li>控制折行
+flex-wrap: wrap</li>
+<li>横轴对齐（主轴）
+just-content: center/space-between</li>
+<li>纵轴对齐（次轴）
+align-items: center</li>
+</ol>
+<h4 id="注意-1">注意</h4>
+<ul>
+<li>flex用于平局布局，也用负数margin</li>
+<li>不要写死width和height,可以用min-width/max-width/min-height/</li>
+<li>flex可以满足所有需求</li>
+</ul>
+<h2 id="grid布局">grid布局</h2>
+<pre><code>    container{
+        grid-template-columns: 40px 50px auto 50px 40px;
+        grid-template-rows: 25% 100px auto;
+    }
+</code></pre><h4 id="注意-2">注意</h4>
+<p>Grid适合不规则的布局</p>
+<h1 id="css定位">css定位</h1>
+<h2 id="position">position</h2>
+<ol>
+<li>static 默认值，在文档流里</li>
+<li>relative相对定位，升起来，但不脱离文档流</li>
+<li>absolute 绝对定位，定位基准是祖先里的非static</li>
+<li>fixed 固定定位，定位基准是viewpoint（有诈）</li>
+<li>sticky粘滞定位 （少用）</li>
+</ol>
+<h4 id="注意-3">注意</h4>
+<ol>
+<li>写了absolute，补一个(爸爸)relative</li>
+<li>写了absolute和fixed，补上top和left</li>
+</ol>
+<h1 id="css动画">css动画</h1>
+<h2 id="浏览器渲染过程">浏览器渲染过程</h2>
+<p>步骤</p>
+<ol>
+<li>根据HTML构建HTML树（DOM）</li>
+<li>根据css构建css树（CSSOM）</li>
+<li>将两颗树合并成一颗渲染树（render tree）</li>
+<li>Layout布局（文档流、盒子模型、位置大小）</li>
+<li>paint绘制（边框、颜色）</li>
+<li>compose合成（根据曾姐关系展示）</li>
+</ol>
+<h2 id="transform变形">transform（变形）</h2>
+<ol>
+<li>
+<p>translate 位移</p>
+<pre><code>transform: translateX(50px);
+transform: translate3d(x,y,z);
+</code></pre><p>translate(-50%,-50%)可以绝对定位元素居中</p>
+</li>
+<li>
+<p>scale 缩放
+scale(numX,numY)</p>
+</li>
+<li>
+<p>rotate 旋转
+rotate(45deg);</p>
+</li>
+<li>
+<p>skew 倾斜
+skewX(45deg);</p>
+</li>
+</ol>
+<h4 id="注意-4">注意</h4>
+<ul>
+<li>一般需要transition过渡</li>
+<li>inline元素不支持transform，需要变成block</li>
+</ul>
+<h2 id="transition过渡">transition过渡</h2>
+<p>用于补充中间帧
+transition：属性名 时长 过渡方式 延迟</p>
+<h2 id="animation">animation</h2>
+<pre><code>.demo.start{
+    animation:xxx 1s
+}
+
+@keyframes xxx{
+    0%{
+        transform:none;
+    }
+    60%{
+        transform:translateX(200px);
+    }
+    100%{
+        transform:translateX(200x) translateY(100px);
+    }
+}
+</code></pre>
     </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">小王子</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-03-13
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2020-03-11" class="archive-post-time">
-        2020-03-11
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/sixth/" class="archive-post-link">
-          简述 CSS 盒模型是什么
-        </a>
-      </span>
-    </div>
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/sixth/">
+            <span class="next-text nav-default">简述 CSS 盒模型是什么</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
 
-    <div class="archive-post">
-      <time datetime="2020-03-10" class="archive-post-time">
-        2020-03-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/fifth/" class="archive-post-link">
-          HTML常用标签
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2020-03-10" class="archive-post-time">
-        2020-03-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/fourth/" class="archive-post-link">
-          HTML入门笔记1
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2020-03-10" class="archive-post-time">
-        2020-03-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-post-link">
-          第三篇文章
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2020-03-10" class="archive-post-time">
-        2020-03-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-post-link">
-          第二篇文章
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2020-03-10" class="archive-post-time">
-        2020-03-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-post-link">
-          第一篇文章
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
   
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
         </div>
       </div>

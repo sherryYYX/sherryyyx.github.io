@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 20:43:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2020 17:23:51 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS 知识总结</title>
+      <link>http://localhost:1313/post/seventh/</link>
+      <pubDate>Fri, 13 Mar 2020 17:23:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/seventh/</guid>
+      <description>css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，</description>
+    </item>
     
     <item>
       <title>简述 CSS 盒模型是什么</title>

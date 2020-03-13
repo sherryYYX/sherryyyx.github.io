@@ -32,6 +32,138 @@
     </item>
     
     <item>
+      <title>CSS 知识总结</title>
+      <link>http://localhost:1313/post/seventh/</link>
+      <pubDate>Fri, 13 Mar 2020 17:23:51 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/seventh/</guid>
+      
+        <description>&lt;h1 id=&#34;css布局&#34;&gt;css布局&lt;/h1&gt;
+&lt;h2 id=&#34;1float布局&#34;&gt;1.float布局&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;子元素上加 &lt;code&gt;float:left和width&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在父元素上加&lt;code&gt;.clearfix&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    .clearfix::after{
+        content:&#39;&#39;;
+        display:block;
+        clear:both;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;注意&#34;&gt;注意&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;float要自己计算宽度，不灵活&lt;/li&gt;
+&lt;li&gt;float在IE6/7有双倍margin bug，加&lt;code&gt;display: inline-block;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;用于IE足矣&lt;/li&gt;
+&lt;li&gt;float平面布局，要用&lt;code&gt;-margin&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;居中：
+&lt;pre&gt;&lt;code&gt;    margin-left:auto;
+    margin-right:auto;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2flex布局&#34;&gt;2.flex布局&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;让一个元素变成flex容器
+&lt;pre&gt;&lt;code&gt;    .comtainer{
+        display: flex;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;改变流动方向
+flex-direction:row / column&lt;/li&gt;
+&lt;li&gt;控制折行
+flex-wrap: wrap&lt;/li&gt;
+&lt;li&gt;横轴对齐（主轴）
+just-content: center/space-between&lt;/li&gt;
+&lt;li&gt;纵轴对齐（次轴）
+align-items: center&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;注意-1&#34;&gt;注意&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;flex用于平局布局，也用负数margin&lt;/li&gt;
+&lt;li&gt;不要写死width和height,可以用min-width/max-width/min-height/&lt;/li&gt;
+&lt;li&gt;flex可以满足所有需求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;grid布局&#34;&gt;grid布局&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;    container{
+        grid-template-columns: 40px 50px auto 50px 40px;
+        grid-template-rows: 25% 100px auto;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;注意-2&#34;&gt;注意&lt;/h4&gt;
+&lt;p&gt;Grid适合不规则的布局&lt;/p&gt;
+&lt;h1 id=&#34;css定位&#34;&gt;css定位&lt;/h1&gt;
+&lt;h2 id=&#34;position&#34;&gt;position&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;static 默认值，在文档流里&lt;/li&gt;
+&lt;li&gt;relative相对定位，升起来，但不脱离文档流&lt;/li&gt;
+&lt;li&gt;absolute 绝对定位，定位基准是祖先里的非static&lt;/li&gt;
+&lt;li&gt;fixed 固定定位，定位基准是viewpoint（有诈）&lt;/li&gt;
+&lt;li&gt;sticky粘滞定位 （少用）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;注意-3&#34;&gt;注意&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;写了absolute，补一个(爸爸)relative&lt;/li&gt;
+&lt;li&gt;写了absolute和fixed，补上top和left&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;css动画&#34;&gt;css动画&lt;/h1&gt;
+&lt;h2 id=&#34;浏览器渲染过程&#34;&gt;浏览器渲染过程&lt;/h2&gt;
+&lt;p&gt;步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;根据HTML构建HTML树（DOM）&lt;/li&gt;
+&lt;li&gt;根据css构建css树（CSSOM）&lt;/li&gt;
+&lt;li&gt;将两颗树合并成一颗渲染树（render tree）&lt;/li&gt;
+&lt;li&gt;Layout布局（文档流、盒子模型、位置大小）&lt;/li&gt;
+&lt;li&gt;paint绘制（边框、颜色）&lt;/li&gt;
+&lt;li&gt;compose合成（根据曾姐关系展示）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;transform变形&#34;&gt;transform（变形）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;translate 位移&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;transform: translateX(50px);
+transform: translate3d(x,y,z);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;translate(-50%,-50%)可以绝对定位元素居中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scale 缩放
+scale(numX,numY)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rotate 旋转
+rotate(45deg);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;skew 倾斜
+skewX(45deg);&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;注意-4&#34;&gt;注意&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;一般需要transition过渡&lt;/li&gt;
+&lt;li&gt;inline元素不支持transform，需要变成block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;transition过渡&#34;&gt;transition过渡&lt;/h2&gt;
+&lt;p&gt;用于补充中间帧
+transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
+&lt;h2 id=&#34;animation&#34;&gt;animation&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;.demo.start{
+    animation:xxx 1s
+}
+
+@keyframes xxx{
+    0%{
+        transform:none;
+    }
+    60%{
+        transform:translateX(200px);
+    }
+    100%{
+        transform:translateX(200x) translateY(100px);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>简述 CSS 盒模型是什么</title>
       <link>http://localhost:1313/post/sixth/</link>
       <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
