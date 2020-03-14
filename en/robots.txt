@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://github.com/sherryYYX/sherryyyx.github.io/sitemap.xml
+Sitemap: http://localhost:1313/sitemap.xml
