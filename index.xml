@@ -32,6 +32,51 @@
     </item>
     
     <item>
+      <title>浅析 URL</title>
+      <link>http://localhost:1313/post/eighth/</link>
+      <pubDate>Sat, 14 Mar 2020 09:57:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/eighth/</guid>
+      
+        <description>&lt;h1 id=&#34;www--url--http--html&#34;&gt;www = URL + HTTP + HTML&lt;/h1&gt;
+&lt;h3 id=&#34;ipinternet-protocol网络协议&#34;&gt;IP（Internet Protocol）网络协议&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;定位一台设备&lt;/li&gt;
+&lt;li&gt;特殊的IP
+127.0.0.1 表示自己
+localhost 通过host指定自己&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;端口port&#34;&gt;端口（port）&lt;/h3&gt;
+&lt;p&gt;提供HTTP服务 用80端口
+HTTPS    443端口&lt;/p&gt;
+&lt;h2 id=&#34;url&#34;&gt;URL&lt;/h2&gt;
+&lt;p&gt;URL= 协议+域名+路径+查询参数+锚点
+&lt;a href=&#34;https://www.baidu.com/s?wd=hello&amp;amp;rsv-spt=1#5&#34;&gt;https://www.baidu.com/s?wd=hello&amp;amp;rsv-spt=1#5&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1协议-https&#34;&gt;1.协议 https://&lt;/h3&gt;
+&lt;p&gt;HyperText Transfer Protocol Secure(超文本传输安全协议)&lt;/p&gt;
+&lt;h3 id=&#34;2域名-wwwbaiducom&#34;&gt;2.域名 &lt;a href=&#34;http://www.baidu.com&#34;&gt;www.baidu.com&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;域名是对IP对别称
+百度对应什么域名：&lt;code&gt;ping baidu.com&lt;/code&gt;
+&lt;a href=&#34;http://www.xiedaima.com&#34;&gt;www.xiedaima.com&lt;/a&gt; 和xiedaima.com不是同一个域名，他们是父子关系&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;com是顶级域名&lt;/li&gt;
+&lt;li&gt;xiedaimala.com是二级域名（俗称：一级域名）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xiedaima.com&#34;&gt;www.xiedaima.com&lt;/a&gt;是三级域名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3路径-s&#34;&gt;3.路径 /s&lt;/h3&gt;
+&lt;p&gt;请求不同对页面&lt;/p&gt;
+&lt;h3 id=&#34;4查询参数-wdhellorsv-spt1&#34;&gt;4.查询参数 ?wd=hello&amp;amp;rsv-spt=1&lt;/h3&gt;
+&lt;p&gt;同一页面，不同内容&lt;/p&gt;
+&lt;h3 id=&#34;5锚点-5&#34;&gt;5.锚点 #5&lt;/h3&gt;
+&lt;p&gt;同一内容，不同位置&lt;/p&gt;
+&lt;h2 id=&#34;dns-domain-name-system域名系统&#34;&gt;DNS （Domain Name System）域名系统&lt;/h2&gt;
+&lt;p&gt;域名和IP是通过DNS对应起来
+&lt;code&gt;nslookup baidu.com&lt;/code&gt;域名寻找&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>CSS 知识总结</title>
       <link>http://localhost:1313/post/seventh/</link>
       <pubDate>Fri, 13 Mar 2020 17:23:51 +0800</pubDate>

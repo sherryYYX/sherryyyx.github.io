@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Mar 2020 17:23:51 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 09:57:23 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析 URL</title>
+      <link>http://localhost:1313/post/eighth/</link>
+      <pubDate>Sat, 14 Mar 2020 09:57:23 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/eighth/</guid>
+      <description>www = URL + HTTP + HTML IP（Internet Protocol）网络协议 定位一台设备 特殊的IP 127.0.0.1 表示自己 localhost 通过host指定自己 端口（port） 提供HT</description>
+    </item>
     
     <item>
       <title>CSS 知识总结</title>
