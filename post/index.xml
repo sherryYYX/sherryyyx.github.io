@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 小王子的博客</title>
-    <link>https://xiayuan.xyz/post/</link>
+    <link>https://github.com/sherryYYX/sherryyyx.github.io/post/</link>
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 14 Mar 2020 23:07:56 +0800</lastBuildDate>
     
-	<atom:link href="https://xiayuan.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://github.com/sherryYYX/sherryyyx.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JavaScript 的诞生</title>
-      <link>https://xiayuan.xyz/post/ninth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/ninth/</link>
       <pubDate>Sat, 14 Mar 2020 23:07:56 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/ninth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/ninth/</guid>
       <description>布兰登艾 JavaScript之父 1. 1995年布兰登为了应付网景公司交给他的任务，这项任务就是，公司急需一种网页脚本语言，让浏览器可以与网页互</description>
     </item>
     
     <item>
       <title>浅析 URL</title>
-      <link>https://xiayuan.xyz/post/eighth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/eighth/</link>
       <pubDate>Sat, 14 Mar 2020 09:57:23 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/eighth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/eighth/</guid>
       <description>www = URL + HTTP + HTML IP（Internet Protocol）网络协议 定位一台设备 特殊的IP 127.0.0.1 表示自己 localhost 通过host指定自己 端口（port） 提供HT</description>
     </item>
     
     <item>
       <title>CSS 知识总结</title>
-      <link>https://xiayuan.xyz/post/seventh/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/seventh/</link>
       <pubDate>Fri, 13 Mar 2020 17:23:51 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/seventh/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/seventh/</guid>
       <description>css布局 1.float布局 子元素上加 float:left和width 在父元素上加.clearfix .clearfix::after{ content:&#39;&#39;; display:block; clear:both; } 注意 float要自己计算宽度，</description>
     </item>
     
     <item>
       <title>简述 CSS 盒模型是什么</title>
-      <link>https://xiayuan.xyz/post/sixth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/sixth/</link>
       <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/sixth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/sixth/</guid>
       <description>简述 CSS 盒模型是什么 css盒模型分为两种 content box boder box 一个盒子由四部分组成 content 内容 padding 内边距 boder 边框 margin 外边距</description>
     </item>
     
     <item>
       <title>HTML常用标签</title>
-      <link>https://xiayuan.xyz/post/fifth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/fifth/</link>
       <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/fifth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/fifth/</guid>
       <description>a 标签的用法 &amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt; 属性 href 取值有网址、路径、伪协议 作用</description>
     </item>
     
     <item>
       <title>HTML入门笔记1</title>
-      <link>https://xiayuan.xyz/post/fourth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/fourth/</link>
       <pubDate>Tue, 10 Mar 2020 15:16:07 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/fourth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/fourth/</guid>
       <description>HTML 1.HTML 是谁发明的 李爵士 2.HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section</description>
     </item>
     
     <item>
       <title>第三篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       <description>如何用 hugo 搭建个人博客 Mac 用户 安装hugo brew install hugo hugo version 创建新的环境 hugo new site xxx.github.io-creator 添加主题 cd xxx.github.io-creator git init xxxxxxxxx //主题下载地址 设置主题名 echo echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 新建文章 hugo new post/my</description>
     </item>
     
     <item>
       <title>第二篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:33:09 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       <description>《桃夭》 诗经 桃之夭夭，灼灼其华。 之子于归，宜其室家。 桃之夭夭，有蕡其实。 之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。 之子于归，宜其家人。</description>
     </item>
     
     <item>
       <title>第一篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:14:14 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       <description>大家好，这里是小王子的博客 自我介绍 我的爱好 看书 电影 篮球 学习</description>
     </item>
     

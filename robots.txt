@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://xiayuan.xyz/sitemap.xml
+Sitemap: https://github.com/sherryYYX/sherryyyx.github.io/sitemap.xml

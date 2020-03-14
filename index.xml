@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>小王子的博客</title>
-    <link>https://xiayuan.xyz/</link>
+    <link>https://github.com/sherryYYX/sherryyyx.github.io/</link>
     <description>Recent content on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
-        <atom:link href="https://xiayuan.xyz/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://github.com/sherryYYX/sherryyyx.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://xiayuan.xyz/about/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/about/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/about/</guid>
       
         <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
 &lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>JavaScript 的诞生</title>
-      <link>https://xiayuan.xyz/post/ninth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/ninth/</link>
       <pubDate>Sat, 14 Mar 2020 23:07:56 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/ninth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/ninth/</guid>
       
         <description>&lt;h1 id=&#34;布兰登艾--javascript之父&#34;&gt;布兰登艾  JavaScript之父&lt;/h1&gt;
 &lt;h2 id=&#34;1&#34;&gt;1.&lt;/h2&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>浅析 URL</title>
-      <link>https://xiayuan.xyz/post/eighth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/eighth/</link>
       <pubDate>Sat, 14 Mar 2020 09:57:23 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/eighth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/eighth/</guid>
       
         <description>&lt;h1 id=&#34;www--url--http--html&#34;&gt;www = URL + HTTP + HTML&lt;/h1&gt;
 &lt;h3 id=&#34;ipinternet-protocol网络协议&#34;&gt;IP（Internet Protocol）网络协议&lt;/h3&gt;
@@ -106,10 +106,10 @@ HTTPS    443端口&lt;/p&gt;
     
     <item>
       <title>CSS 知识总结</title>
-      <link>https://xiayuan.xyz/post/seventh/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/seventh/</link>
       <pubDate>Fri, 13 Mar 2020 17:23:51 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/seventh/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/seventh/</guid>
       
         <description>&lt;h1 id=&#34;css布局&#34;&gt;css布局&lt;/h1&gt;
 &lt;h2 id=&#34;1float布局&#34;&gt;1.float布局&lt;/h2&gt;
@@ -238,10 +238,10 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
     
     <item>
       <title>简述 CSS 盒模型是什么</title>
-      <link>https://xiayuan.xyz/post/sixth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/sixth/</link>
       <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/sixth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/sixth/</guid>
       
         <description>&lt;h2 id=&#34;简述-css-盒模型是什么&#34;&gt;简述 CSS 盒模型是什么&lt;/h2&gt;
 &lt;h3 id=&#34;css盒模型分为两种&#34;&gt;css盒模型分为两种&lt;/h3&gt;
@@ -256,17 +256,17 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
 &lt;li&gt;boder    边框&lt;/li&gt;
 &lt;li&gt;margin   外边距&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://xiayuan.xyz/static/img/1.png&#34; alt=&#34;两种盒模型&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/sherryYYX/sherryyyx.github.io/static/img/1.png&#34; alt=&#34;两种盒模型&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
       <title>HTML常用标签</title>
-      <link>https://xiayuan.xyz/post/fifth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/fifth/</link>
       <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/fifth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/fifth/</guid>
       
         <description>&lt;h2 id=&#34;a-标签的用法&#34;&gt;a 标签的用法&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
@@ -386,10 +386,10 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
     
     <item>
       <title>HTML入门笔记1</title>
-      <link>https://xiayuan.xyz/post/fourth/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/fourth/</link>
       <pubDate>Tue, 10 Mar 2020 15:16:07 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/fourth/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/fourth/</guid>
       
         <description>&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;
 &lt;h3 id=&#34;1html-是谁发明的&#34;&gt;1.HTML 是谁发明的&lt;/h3&gt;
@@ -449,10 +449,10 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
     
     <item>
       <title>第三篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       
         <description>&lt;h1 id=&#34;如何用-hugo-搭建个人博客&#34;&gt;如何用 hugo 搭建个人博客&lt;/h1&gt;
 &lt;h2 id=&#34;mac-用户&#34;&gt;Mac 用户&lt;/h2&gt;
@@ -519,10 +519,10 @@ xxxxxxxxx //主题下载地址
     
     <item>
       <title>第二篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:33:09 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       
         <description>&lt;h1 id=&#34;桃夭-诗经&#34;&gt;《桃夭》 诗经&lt;/h1&gt;
 &lt;p&gt;桃之夭夭，灼灼其华。
@@ -537,10 +537,10 @@ xxxxxxxxx //主题下载地址
     
     <item>
       <title>第一篇文章</title>
-      <link>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <link>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
       <pubDate>Tue, 10 Mar 2020 13:14:14 +0800</pubDate>
       
-      <guid>https://xiayuan.xyz/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <guid>https://github.com/sherryYYX/sherryyyx.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
       
         <description>&lt;h1 id=&#34;大家好这里是小王子的博客&#34;&gt;大家好，这里是小王子的博客&lt;/h1&gt;
 &lt;h2 id=&#34;自我介绍&#34;&gt;自我介绍&lt;/h2&gt;

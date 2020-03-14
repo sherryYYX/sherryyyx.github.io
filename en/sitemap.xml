@@ -1,20 +1,20 @@
-<?xml-stylesheet type="text/xsl" href="https://xiayuan.xyz/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://github.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xiayuan.xyz/en/categories/</loc>
+    <loc>https://github.com/sherryYYX/sherryyyx.github.io/en/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://xiayuan.xyz/en/tags/</loc>
+    <loc>https://github.com/sherryYYX/sherryyyx.github.io/en/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://xiayuan.xyz/en/</loc>
+    <loc>https://github.com/sherryYYX/sherryyyx.github.io/en/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
