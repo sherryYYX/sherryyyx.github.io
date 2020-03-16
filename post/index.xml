@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Mar 2020 23:07:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2020 19:45:21 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 的基本语法</title>
+      <link>http://localhost:1313/post/tenth/</link>
+      <pubDate>Mon, 16 Mar 2020 19:45:21 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/tenth/</guid>
+      <description>1.表达式和语句 表达式 1 + 2 表达式的值为3 add(1,2)表达式的值为函数的返回值 语句 var a = 1是一个语句 区别 表达式一般有值，语句可能有可能无</description>
+    </item>
     
     <item>
       <title>JavaScript 的诞生</title>
