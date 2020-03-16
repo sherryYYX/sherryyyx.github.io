@@ -44,7 +44,7 @@
       <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
       
       <guid>http://localhost:1313/post/sixth/</guid>
-      <description>简述 CSS 盒模型是什么 css盒模型分为两种 content box boder box 一个盒子由四部分组成 content 内容 padding 内边距 boder 边框 margin 外边距</description>
+      <description>简述 CSS 盒模型是什么 css盒模型分为两种 content box boder box 一个盒子由四部分组成 content 内容 padding 内边距 boder 边框 margin 外边距 ![两种盒模型]（/img/1.png)</description>
     </item>
     
     <item>
