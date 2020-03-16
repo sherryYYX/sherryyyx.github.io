@@ -121,9 +121,8 @@
 循环体
 }&lt;/p&gt;
 &lt;h3 id=&#34;变态-1&#34;&gt;变态&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;1. ![img](/img/tenth_img/5.png)
-2. ![img](/img/tenth_img/6.png)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/tenth_img/5.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/tenth_img/6.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;先执行语句1，然后判断表达式2，如果为真，执行循环体，然后执行语句3；如果为假，直接退出循环。&lt;/li&gt;
 &lt;/ul&gt;
