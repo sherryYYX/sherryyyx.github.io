@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Mar 2020 19:45:21 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 19:36:03 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 对象基本用法</title>
+      <link>http://localhost:1313/post/11st/</link>
+      <pubDate>Tue, 17 Mar 2020 19:36:03 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/11st/</guid>
+      <description>JavaScript 对象（Object） 写法 简单写法 let obj = { &amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;,&amp;quot;age&amp;quot;:18 } let obj = new Object({&amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;}) //正规写法 注意 键名是字符串，不是标识符，可以包含任意字符 数字的时候，引号可省 就算引</description>
+    </item>
     
     <item>
       <title>JS 的基本语法</title>

@@ -6,7 +6,7 @@
     <description>Recent content on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Mar 2020 19:36:03 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -33,10 +33,10 @@
     
     <item>
       <title>JS 对象基本用法</title>
-      <link>http://localhost:1313/11st/</link>
+      <link>http://localhost:1313/post/11st/</link>
       <pubDate>Tue, 17 Mar 2020 19:36:03 +0800</pubDate>
       
-      <guid>http://localhost:1313/11st/</guid>
+      <guid>http://localhost:1313/post/11st/</guid>
       
         <description>&lt;h2 id=&#34;javascript-对象object&#34;&gt;JavaScript 对象（Object）&lt;/h2&gt;
 &lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
