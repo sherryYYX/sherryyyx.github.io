@@ -46,7 +46,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;
 let obj = new Object({&amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;}) //正规写法
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;注意&#34;&gt;注意&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;注意&#34;&gt;⚠️注意&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;键名是字符串，不是标识符，可以包含任意字符&lt;/li&gt;
 &lt;li&gt;数字的时候，引号可省&lt;/li&gt;
