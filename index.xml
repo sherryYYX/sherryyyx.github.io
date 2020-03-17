@@ -6,7 +6,7 @@
     <description>Recent content on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 19:36:03 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +27,102 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JS 对象基本用法</title>
+      <link>http://localhost:1313/11st/</link>
+      <pubDate>Tue, 17 Mar 2020 19:36:03 +0800</pubDate>
+      
+      <guid>http://localhost:1313/11st/</guid>
+      
+        <description>&lt;h2 id=&#34;javascript-对象object&#34;&gt;JavaScript 对象（Object）&lt;/h2&gt;
+&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
+&lt;p&gt;简单写法&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {
+        &amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;,&amp;quot;age&amp;quot;:18 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;
+let obj = new Object({&amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;}) //正规写法
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;注意&#34;&gt;注意&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;键名是字符串，不是标识符，可以包含任意字符&lt;/li&gt;
+&lt;li&gt;数字的时候，引号可省&lt;/li&gt;
+&lt;li&gt;就算引号省略，键名还是字符串（重要）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;属性名&#34;&gt;属性名&lt;/h2&gt;
+&lt;p&gt;每个key都是对象的属性名（property）&lt;/p&gt;
+&lt;h3 id=&#34;变量做属性名&#34;&gt;变量做属性名&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/11st_ing/1.png&#34; alt=&#34;ing&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注意-1&#34;&gt;注意&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;不加[]的属性名会自动变为字符串&lt;/li&gt;
+&lt;li&gt;加了[]会当作变量求值&lt;/li&gt;
+&lt;li&gt;值如果不是字符串，会自动变成字符串&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何删除对象的属性&#34;&gt;如何删除对象的属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;delete obj.xxx&lt;/code&gt;或者 &lt;code&gt;delete obj[xxx]&lt;/code&gt;
+可以删除obj的xxx属性&lt;/li&gt;
+&lt;li&gt;查看一个属性名是否在对象
+&lt;code&gt;&#39;xxx&#39; in obj === false&lt;/code&gt;obj对象里没有xxx属性&lt;/li&gt;
+&lt;li&gt;有属性名，但是值为undefined
+&lt;code&gt;&amp;quot;xxx&amp;quot; in obj &amp;amp;&amp;amp; obj.xxx === undefined&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;obj.xxx === undefined&lt;/code&gt;
+不能判断xxx是否为obj的属性，只能判断属性值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何查看对象的属性读属性&#34;&gt;如何查看对象的属性（读属性）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;查看自身所有属性
+&lt;code&gt;Object.keys(obj)&lt;/code&gt;
+查看属性值：&lt;code&gt;Object.values(obj)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看自身+共有属性
+&lt;code&gt;console.dir(obj)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;判断一个属性是自身的还是共有的
+&lt;code&gt;obj.hasOwnProperty(&amp;quot;toString&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何查看对象的属性&#34;&gt;如何查看对象的属性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;两种方法
+&lt;ol&gt;
+&lt;li&gt;中括号法：&lt;code&gt;obj[&amp;quot;key&amp;quot;]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点语法：&lt;code&gt;obj.key&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;注意-2&#34;&gt;注意&lt;/h3&gt;
+&lt;p&gt;请使用第一种中括号法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;obj.name&lt;/code&gt;等价于&lt;code&gt;obj[&amp;quot;name&amp;quot;]&lt;/code&gt;这里name是字符串，不是变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;obj.name&lt;/code&gt;不等于&lt;code&gt;obj[name]&lt;/code&gt;中括号里那么是变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何修改或增加对象的属性&#34;&gt;如何修改或增加对象的属性&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;直接赋值&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;let obj = {name:&amp;quot;frank&amp;quot;}&lt;/code&gt;//name是字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;obj.name = &amp;quot;frank&amp;quot;&lt;/code&gt;//name 是字符串&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;obj[&amp;quot;name&amp;quot;] = &amp;quot;frank&amp;quot; &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;批量赋值
+&lt;code&gt;Object.assign(obj, {age: 19, gender: &amp;quot;man&amp;quot;})&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;name-in-obj和objhasownpropertyname-的区别&#34;&gt;&amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&#39;name&#39; in obj&lt;/code&gt;:属性名name是否在obj对象里&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;obj.hasOwnProperty(&#39;name&#39;)&lt;/code&gt;
+判断属性name是obj对象自身的还是共有的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>

@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>小王子的博客</title>
+  <title>JS 对象基本用法 - 小王子的博客</title>
   
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="小王子" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="JavaScript 对象（Object） 写法 简单写法 let obj = { &amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;,&amp;quot;age&amp;quot;:18 } let obj = new Object({&amp;quot;name&amp;quot;:&amp;quot;frank&amp;quot;}) //正规写法 注意 键名是字符串，不是标识符，可以包含任意字符 数字的时候，引号可省 就算引" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.66.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="小王子的博客" />
+<link rel="canonical" href="http://localhost:1313/11st/" />
+
 
 
 
@@ -60,15 +59,23 @@
 
 
 
-<meta property="og:title" content="小王子的博客" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:updated_time" content="2020-03-17T19:36:03+08:00" />
-<meta itemprop="name" content="小王子的博客">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="小王子的博客"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="JS 对象基本用法" />
+<meta property="og:description" content="JavaScript 对象（Object） 写法 简单写法 let obj = { &quot;name&quot;:&quot;frank&quot;,&quot;age&quot;:18 } let obj = new Object({&quot;name&quot;:&quot;frank&quot;}) //正规写法 注意 键名是字符串，不是标识符，可以包含任意字符 数字的时候，引号可省 就算引" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/11st/" />
+<meta property="article:published_time" content="2020-03-17T19:36:03+08:00" />
+<meta property="article:modified_time" content="2020-03-17T19:36:03+08:00" />
+<meta itemprop="name" content="JS 对象基本用法">
+<meta itemprop="description" content="JavaScript 对象（Object） 写法 简单写法 let obj = { &quot;name&quot;:&quot;frank&quot;,&quot;age&quot;:18 } let obj = new Object({&quot;name&quot;:&quot;frank&quot;}) //正规写法 注意 键名是字符串，不是标识符，可以包含任意字符 数字的时候，引号可省 就算引">
+<meta itemprop="datePublished" content="2020-03-17T19:36:03&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-17T19:36:03&#43;08:00" />
+<meta itemprop="wordCount" content="657">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JS 对象基本用法"/>
+<meta name="twitter:description" content="JavaScript 对象（Object） 写法 简单写法 let obj = { &quot;name&quot;:&quot;frank&quot;,&quot;age&quot;:18 } let obj = new Object({&quot;name&quot;:&quot;frank&quot;}) //正规写法 注意 键名是字符串，不是标识符，可以包含任意字符 数字的时候，引号可省 就算引"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -235,7 +242,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -327,157 +334,187 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
+          <article class="post bg-white">
   
-  
-    
-  
-  
-  
-    <article class="post bg-white">
   <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/fourth/">HTML入门笔记1</a>
-    </h1>
+    <h1 class="post-title">JS 对象基本用法</h1>
     
     <div class="post-meta">
-      <time datetime="2020-03-10" class="post-time">
-        2020-03-10
+      <time datetime="2020-03-17" class="post-time">
+        2020-03-17
       </time>
-      
-      
-      
-      
     </div>
   </header>
+
+  
+  
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript-对象object">JavaScript 对象（Object）</a>
+      <ul>
+        <li><a href="#写法">写法</a></li>
+        <li><a href="#注意">注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#属性名">属性名</a>
+      <ul>
+        <li><a href="#变量做属性名">变量做属性名</a></li>
+        <li><a href="#注意-1">注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何删除对象的属性">如何删除对象的属性</a></li>
+    <li><a href="#如何查看对象的属性读属性">如何查看对象的属性（读属性）</a></li>
+    <li><a href="#如何查看对象的属性">如何查看对象的属性</a>
+      <ul>
+        <li><a href="#注意-2">注意</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何修改或增加对象的属性">如何修改或增加对象的属性</a>
+      <ul>
+        <li><a href="#name-in-obj和objhasownpropertyname-的区别">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
   
   <div class="post-content">
-    
-    <div class="post-summary">
-      HTML 1.HTML 是谁发明的 李爵士 2.HTML 起手应该写什么 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section
-    </div>
-    <div class="read-more">
-      <a href="/post/fourth/" class="read-more-link">阅读全文</a>
-    </div>
-    
+      <h2 id="javascript-对象object">JavaScript 对象（Object）</h2>
+<h3 id="写法">写法</h3>
+<p>简单写法</p>
+<pre><code>let obj = {
+        &quot;name&quot;:&quot;frank&quot;,&quot;age&quot;:18 
+}
+</code></pre><pre><code>
+let obj = new Object({&quot;name&quot;:&quot;frank&quot;}) //正规写法
+</code></pre><h3 id="注意">注意</h3>
+<ul>
+<li>键名是字符串，不是标识符，可以包含任意字符</li>
+<li>数字的时候，引号可省</li>
+<li>就算引号省略，键名还是字符串（重要）</li>
+</ul>
+<h2 id="属性名">属性名</h2>
+<p>每个key都是对象的属性名（property）</p>
+<h3 id="变量做属性名">变量做属性名</h3>
+<p><img src="/img/11st_ing/1.png" alt="ing"></p>
+<h3 id="注意-1">注意</h3>
+<ul>
+<li>不加[]的属性名会自动变为字符串</li>
+<li>加了[]会当作变量求值</li>
+<li>值如果不是字符串，会自动变成字符串</li>
+</ul>
+<h2 id="如何删除对象的属性">如何删除对象的属性</h2>
+<ol>
+<li><code>delete obj.xxx</code>或者 <code>delete obj[xxx]</code>
+可以删除obj的xxx属性</li>
+<li>查看一个属性名是否在对象
+<code>'xxx' in obj === false</code>obj对象里没有xxx属性</li>
+<li>有属性名，但是值为undefined
+<code>&quot;xxx&quot; in obj &amp;&amp; obj.xxx === undefined</code></li>
+<li><code>obj.xxx === undefined</code>
+不能判断xxx是否为obj的属性，只能判断属性值</li>
+</ol>
+<h2 id="如何查看对象的属性读属性">如何查看对象的属性（读属性）</h2>
+<ol>
+<li>查看自身所有属性
+<code>Object.keys(obj)</code>
+查看属性值：<code>Object.values(obj)</code></li>
+<li>查看自身+共有属性
+<code>console.dir(obj)</code></li>
+<li>判断一个属性是自身的还是共有的
+<code>obj.hasOwnProperty(&quot;toString&quot;)</code></li>
+</ol>
+<h2 id="如何查看对象的属性">如何查看对象的属性</h2>
+<ul>
+<li>两种方法
+<ol>
+<li>中括号法：<code>obj[&quot;key&quot;]</code></li>
+<li>点语法：<code>obj.key</code></li>
+</ol>
+</li>
+</ul>
+<h3 id="注意-2">注意</h3>
+<p>请使用第一种中括号法</p>
+<ul>
+<li><code>obj.name</code>等价于<code>obj[&quot;name&quot;]</code>这里name是字符串，不是变量</li>
+<li><code>obj.name</code>不等于<code>obj[name]</code>中括号里那么是变量</li>
+</ul>
+<h2 id="如何修改或增加对象的属性">如何修改或增加对象的属性</h2>
+<ol>
+<li>
+<p>直接赋值</p>
+<ul>
+<li><code>let obj = {name:&quot;frank&quot;}</code>//name是字符串</li>
+<li><code>obj.name = &quot;frank&quot;</code>//name 是字符串</li>
+<li><code>obj[&quot;name&quot;] = &quot;frank&quot; </code></li>
+</ul>
+</li>
+<li>
+<p>批量赋值
+<code>Object.assign(obj, {age: 19, gender: &quot;man&quot;})</code></p>
+</li>
+</ol>
+<h3 id="name-in-obj和objhasownpropertyname-的区别">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
+<ul>
+<li>
+<p><code>'name' in obj</code>:属性名name是否在obj对象里</p>
+</li>
+<li>
+<p><code>obj.hasOwnProperty('name')</code>
+判断属性name是obj对象自身的还是共有的</p>
+</li>
+</ul>
+
   </div>
+
+  
+  
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">小王子</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-03-17
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+  
+  
 </article>
 
+
+
+
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/">第三篇文章</a>
-    </h1>
+
+  
+  
+
+  
+
+  
+
+  
+
     
-    <div class="post-meta">
-      <time datetime="2020-03-10" class="post-time">
-        2020-03-10
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      如何用 hugo 搭建个人博客 Mac 用户 安装hugo brew install hugo hugo version 创建新的环境 hugo new site xxx.github.io-creator 添加主题 cd xxx.github.io-creator git init xxxxxxxxx //主题下载地址 设置主题名 echo echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml 新建文章 hugo new post/my
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">第二篇文章</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-03-10" class="post-time">
-        2020-03-10
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      《桃夭》 诗经 桃之夭夭，灼灼其华。 之子于归，宜其室家。 桃之夭夭，有蕡其实。 之子于归，宜其家室。 桃之夭夭，其叶蓁蓁。 之子于归，宜其家人。
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/page/4/">4</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>
