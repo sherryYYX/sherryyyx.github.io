@@ -57,7 +57,7 @@ for(i = 0; i&amp;lt;6; i++){
 &lt;pre&gt;&lt;code&gt;for(let i = 0; i &amp;lt; 6; i++){
     setTimeout (() =&amp;gt; {console.log(i)},0)
 }//打印 0,1,2,3,4,5
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-除了使用-for-let-配合其他方法&#34;&gt;3 除了使用 for let 配合，其他方法&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-除了-for-let-配合其他方法&#34;&gt;3 除了 for let 配合，其他方法&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;let i
 for(i = 0; i &amp;lt; 6; i++){
    !function(j){
