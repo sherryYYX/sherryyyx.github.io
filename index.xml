@@ -32,6 +32,46 @@
     </item>
     
     <item>
+      <title>JS 函数的执行时机</title>
+      <link>http://localhost:1313/post/twelfth/</link>
+      <pubDate>Fri, 20 Mar 2020 20:17:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/twelfth/</guid>
+      
+        <description>&lt;pre&gt;&lt;code&gt;let i = 0
+for(i = 0; i&amp;lt;6; i++){
+  setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+}
+//打印出6个6
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;解释&#34;&gt;解释&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;i是全局变量&lt;/li&gt;
+&lt;li&gt;for循环遍历i&lt;/li&gt;
+&lt;li&gt;而每次循环里都有setTimeout()&lt;/li&gt;
+&lt;li&gt;setTimeout()里的函数会在for循环结束后再执行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;i = 6&lt;/code&gt;时，循环结束，一起打印6个6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-写出让上面代码打印-012345-的方法&#34;&gt;2 写出让上面代码打印 0、1、2、3、4、5 的方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;for(let i = 0; i &amp;lt; 6; i++){
+    setTimeout (() =&amp;gt; {console.log(i)},0)
+}//打印 0,1,2,3,4,5
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-除了使用-for-let-配合其他方法&#34;&gt;3 除了使用 for let 配合，其他方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;let i
+for(i = 0; i &amp;lt; 6; i++){
+   !function(j){
+    setTimeout(()=&amp;gt;{
+     console.log(j)
+    },0)
+   }(i)
+}
+//打印 0,1,2,3,4,5
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>JS 对象基本用法</title>
       <link>http://localhost:1313/post/11st/</link>
       <pubDate>Tue, 17 Mar 2020 19:36:03 +0800</pubDate>

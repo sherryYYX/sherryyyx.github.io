@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Mar 2020 19:36:03 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 20:17:59 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 函数的执行时机</title>
+      <link>http://localhost:1313/post/twelfth/</link>
+      <pubDate>Fri, 20 Mar 2020 20:17:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/twelfth/</guid>
+      <description>let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) } //打印出6个6 解释 i是全局变量 for循环遍历i 而每次循环里都有setTimeout() setTimeout()里</description>
+    </item>
     
     <item>
       <title>JS 对象基本用法</title>
