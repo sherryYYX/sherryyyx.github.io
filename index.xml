@@ -32,6 +32,66 @@
     </item>
     
     <item>
+      <title>* HTML 总结</title>
+      <link>http://localhost:1313/post/thirteenth/</link>
+      <pubDate>Sun, 22 Mar 2020 16:44:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/thirteenth/</guid>
+      
+        <description>&lt;h2 id=&#34;canvas&#34;&gt;canvas&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;const canvas = document.getElementById(&#39;canvas&#39;); //获取canvas的引用
+const ctx = canvas.getContext(&#39;2d&#39;); //获取canvas 2d 上下文
+
+ctx.fillStyle = &#39;green&#39;; // 设置画笔颜色
+ctx.fillRect(10, 10, 150, 100); //设置画笔范围（坐标，宽高）
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;video&#34;&gt;video&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Simple video example --&amp;gt;
+&amp;lt;video src=&amp;quot;videofile.ogg&amp;quot; autoplay poster=&amp;quot;posterimage.jpg&amp;quot;&amp;gt; 
+//视频来源， 自动播放 设置封面
+  抱歉，您的浏览器不支持内嵌视频，不过不用担心，你可以 &amp;lt;a href=&amp;quot;videofile.ogg&amp;quot;&amp;gt;下载&amp;lt;/a&amp;gt;
+  并用你喜欢的播放器观看!
+&amp;lt;/video&amp;gt;
+
+&amp;lt;!-- Video with subtitles --&amp;gt;
+&amp;lt;video src=&amp;quot;foo.ogg&amp;quot;&amp;gt;
+  &amp;lt;track kind=&amp;quot;subtitles&amp;quot; src=&amp;quot;foo.en.vtt&amp;quot; srclang=&amp;quot;en&amp;quot; label=&amp;quot;English&amp;quot;&amp;gt;//加字幕
+  &amp;lt;track kind=&amp;quot;subtitles&amp;quot; src=&amp;quot;foo.sv.vtt&amp;quot; srclang=&amp;quot;sv&amp;quot; label=&amp;quot;Svenska&amp;quot;&amp;gt;
+&amp;lt;/video&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;题目&#34;&gt;题目&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;HTML5标签
+内容：header main footer article p
+功能：canvas video audio&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;必考：你是如何理解 HTML 语义化的？
+举例法
+HTML 语义化就是使用正确的标签（总结）段落就写 p 标签，标题就写 h1 标签，文章就写article标签，视频就写video标签，等等。
+阐述法
+首先讲以前的后台开发人员使用table布局，然后讲美工人员使用div+css布局，最后讲专业的前端会使用正确的标签进行页面开发。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;meta viewport 是做什么用的，怎么写？
+举例法
+&lt;code&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1&amp;quot;&amp;gt;&lt;/code&gt;
+然后逐个解释每个单词的意思。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;你用过哪些 HTML 5 标签？
+内容：header main footer article p
+功能：canvas video audio&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;H5 是什么？
+搜一下知乎就知道了，H5表示移动端页面，反正不是HTML5。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>JS 函数的执行时机</title>
       <link>http://localhost:1313/post/twelfth/</link>
       <pubDate>Fri, 20 Mar 2020 20:17:59 +0800</pubDate>

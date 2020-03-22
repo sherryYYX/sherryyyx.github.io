@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Mar 2020 20:17:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 16:44:11 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>* HTML 总结</title>
+      <link>http://localhost:1313/post/thirteenth/</link>
+      <pubDate>Sun, 22 Mar 2020 16:44:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/thirteenth/</guid>
+      <description>canvas const canvas = document.getElementById(&#39;canvas&#39;); //获取canvas的引用 const ctx = canvas.getContext(&#39;2d&#39;); //获取canvas 2d 上下文 ctx.fillStyle = &#39;green&#39;; // 设置画笔颜色 ctx.fillRect(10, 10, 150, 100); //设置画笔范围（坐标，宽高） video &amp;lt;!-- Simple video example</description>
+    </item>
     
     <item>
       <title>JS 函数的执行时机</title>
