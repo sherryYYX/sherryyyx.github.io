@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 11 Apr 2020 16:31:55 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 23:03:08 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>闭包</title>
+      <link>http://localhost:1313/post/seventeenh/</link>
+      <pubDate>Sat, 11 Apr 2020 23:03:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/seventeenh/</guid>
+      <description>一、闭包是：一个函数用到了外部变量，那么函数+变量就是闭包。 function f1() { let a = 1; function f2() { console.log(a) } f2() } f1() //其中的变量a和函数f2就是闭包 二、闭包的用途是</description>
+    </item>
     
     <item>
       <title>浅析 MVC</title>
