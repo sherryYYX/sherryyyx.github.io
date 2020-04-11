@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>小王子的博客</title>
+  <title>浅析 MVC - 小王子的博客</title>
   
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="小王子" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="1. MVC 三个对象分别做什么 每个模块都可以写成三个对象，分别是 M —— Model 数据类型 负责操作所有数据 V —— View 视图 负责所有UI界面 C —— Controller 控制器 负责其他 代" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.66.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="小王子的博客" />
+<link rel="canonical" href="http://localhost:1313/post/sixteenth/" />
+
 
 
 
@@ -60,15 +59,23 @@
 
 
 
-<meta property="og:title" content="小王子的博客" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:updated_time" content="2017-08-20T21:38:52+08:00" />
-<meta itemprop="name" content="小王子的博客">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="小王子的博客"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="浅析 MVC" />
+<meta property="og:description" content="1. MVC 三个对象分别做什么 每个模块都可以写成三个对象，分别是 M —— Model 数据类型 负责操作所有数据 V —— View 视图 负责所有UI界面 C —— Controller 控制器 负责其他 代" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/sixteenth/" />
+<meta property="article:published_time" content="2020-04-11T16:31:55+08:00" />
+<meta property="article:modified_time" content="2020-04-11T16:31:55+08:00" />
+<meta itemprop="name" content="浅析 MVC">
+<meta itemprop="description" content="1. MVC 三个对象分别做什么 每个模块都可以写成三个对象，分别是 M —— Model 数据类型 负责操作所有数据 V —— View 视图 负责所有UI界面 C —— Controller 控制器 负责其他 代">
+<meta itemprop="datePublished" content="2020-04-11T16:31:55&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-11T16:31:55&#43;08:00" />
+<meta itemprop="wordCount" content="426">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浅析 MVC"/>
+<meta name="twitter:description" content="1. MVC 三个对象分别做什么 每个模块都可以写成三个对象，分别是 M —— Model 数据类型 负责操作所有数据 V —— View 视图 负责所有UI界面 C —— Controller 控制器 负责其他 代"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -235,7 +242,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -327,161 +334,229 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">浅析 MVC</h1>
       
-      <a class="post-link" href="/post/sixth/">简述 CSS 盒模型是什么</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2020-04-11" class="post-time">
+          2020-04-11
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2020-03-11" class="post-time">
-        2020-03-11
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      简述 CSS 盒模型是什么 css盒模型分为两种 content box boder box 一个盒子由四部分组成 content 内容 padding 内边距 boder 边框 margin 外边距
-    </div>
-    <div class="read-more">
-      <a href="/post/sixth/" class="read-more-link">阅读全文</a>
-    </div>
-    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-mvc-三个对象分别做什么">1. MVC 三个对象分别做什么</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#2-eventbus-有哪些-api是做什么用的给出伪代码示例">2. EventBus 有哪些 API，是做什么用的，给出伪代码示例</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#3-表驱动编程">3. 表驱动编程</a></li>
+    <li><a href="#我是如何理解模块化的">我是如何理解模块化的</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
   </div>
-</article>
+</div>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/fifth/">HTML常用标签</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2020-03-10" class="post-time">
-        2020-03-10
-      </time>
-      
-      
-      
-      
+    <div class="post-content">
+      <h2 id="1-mvc-三个对象分别做什么">1. MVC 三个对象分别做什么</h2>
+<h4 id="每个模块都可以写成三个对象分别是">每个模块都可以写成三个对象，分别是</h4>
+<ul>
+<li>M —— Model 数据类型 负责操作所有数据</li>
+<li>V —— View 视图 负责所有UI界面</li>
+<li>C —— Controller 控制器 负责其他</li>
+</ul>
+<h4 id="代码示例">代码示例</h4>
+<p>将代码重构成mvc模式</p>
+<pre><code>// 数据相关都放到m
+const m = {
+  data: {},
+  create() {},
+  delete() {},
+  update() {},
+  get() {}
+}
+
+// 视图相关都放到v
+const v = {
+  el: null,
+  html: ``, //放html
+  init() {}, //初始化
+  render() {} //渲染
+}
+
+// 其他操作、方法都放c
+const c = {
+  init() {},
+  events: {},
+  add() {},
+  minus() {},
+  mul() {},
+  div() {},
+  autoBindEvents() {}
+}
+
+</code></pre><h2 id="2-eventbus-有哪些-api是做什么用的给出伪代码示例">2. EventBus 有哪些 API，是做什么用的，给出伪代码示例</h2>
+<h4 id="常用api">常用API</h4>
+<ol>
+<li><code>on</code></li>
+<li><code>trigger()</code></li>
+<li><code>off</code></li>
+</ol>
+<h4 id="具体用法">具体用法</h4>
+<ol>
+<li><code>EventBus.on()</code> 绑定事件</li>
+</ol>
+<pre><code> eventBus.on('eventName',fn)
+ //事件名，回调函数
+</code></pre><ol start="2">
+<li><code>EventBus.trigger</code> 触发事件</li>
+</ol>
+<pre><code>eventBus.trigger('eventName',data)
+</code></pre><ol start="3">
+<li><code>eventBus.off</code> 解绑事件</li>
+</ol>
+<pre><code>eventBus.off('eventName',fn)
+</code></pre><h2 id="3-表驱动编程">3. 表驱动编程</h2>
+<pre><code>表驱动法就是将要不断`if else`的代码做成哈希表，结构简单明了。
+让代码稳定性高，更易修改维护
+</code></pre>
+<pre><code>//不用表编程
+if(key===1){
+    add1()
+}
+else if(key===2){
+    add2()
+}
+else if(key===3){
+    add3()
+}
+else if(key===4){
+    add4()
+}else{
+    add5()
+}
+
+//使用表编程
+const events = {
+    1: add1()
+    2: add2()
+    3: add3()
+    4: add4()
+    5: add5() 
+}
+events[key]()
+</code></pre><p>优点：</p>
+<ol>
+<li>减少代码重复</li>
+<li>降低复杂度，结构明晰</li>
+<li>提高代码可读性</li>
+</ol>
+<h2 id="我是如何理解模块化的">我是如何理解模块化的</h2>
+<h4 id="优点">优点</h4>
+<ol>
+<li>分层，结构清晰</li>
+<li>降低了每个模块耦合度</li>
+<li>多人合作互不干扰
+开发人员分工明确，提高开高效率，降低维护成本。</li>
+</ol>
+
     </div>
-  </header>
-  
-  <div class="post-content">
+
     
-    <div class="post-summary">
-      a 标签的用法 &lt;a href=&quot;//google.com&quot;&gt;超链接&lt;/a&gt; 属性 href 取值有网址、路径、伪协议 作用
-    </div>
-    <div class="read-more">
-      <a href="/post/fifth/" class="read-more-link">阅读全文</a>
-    </div>
     
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">小王子</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-04-11
       
-      <a class="post-link" href="/post/fourth/">HTML入门笔记1</a>
-    </h1>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
     
-    <div class="post-meta">
-      <time datetime="2020-03-10" class="post-time">
-        2020-03-10
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      HTML 1.HTML 是谁发明的 李爵士 2.HTML 起手应该写什么 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;/body&gt; &lt;/html&gt; 3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section
-    </div>
-    <div class="read-more">
-      <a href="/post/fourth/" class="read-more-link">阅读全文</a>
-    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/fourteenth/">
+            <span class="next-text nav-default">jQuery 的功能</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/page/5/">5</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>
