@@ -32,6 +32,55 @@
     </item>
     
     <item>
+      <title>webpack</title>
+      <link>http://localhost:1313/post/eighteenth/</link>
+      <pubDate>Sun, 12 Apr 2020 22:24:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/eighteenth/</guid>
+      
+        <description>&lt;h2 id=&#34;webpack&#34;&gt;webpack&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/18st_img/webpack.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;webpack-中的-loader-和-plugin-区别是什么&#34;&gt;webpack 中的 loader 和 plugin 区别是什么？&lt;/h2&gt;
+&lt;h4 id=&#34;一&#34;&gt;一、&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;loader 是加载器&lt;/li&gt;
+&lt;li&gt;plugin 是插件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;二用途&#34;&gt;二、用途&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;加载器用来加载文件
+例如：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;babel loader&lt;/code&gt;用来加载高级js，将其变成低版本支持的js。&lt;/li&gt;
+&lt;li&gt;css loader 是把css 变成页面中的&lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;标签。&lt;/li&gt;
+&lt;li&gt;加载图片，对图片优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;plugin 插件是扩展功能&lt;br&gt;
+例如：
+&lt;ul&gt;
+&lt;li&gt;插件&lt;code&gt;HtmlWebpackPlugin&lt;/code&gt;，用来生成html文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MiniCssExtractPlugin&lt;/code&gt;, 用来抽取css代码，变成文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;懒加载&#34;&gt;懒加载&lt;/h2&gt;
+&lt;p&gt;如何懒加载呢？&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;button.onclick = () =&amp;gt; {
+    const promise = import(&#39;./lazy&#39;)
+    promise.then((module) =&amp;gt; {
+        const fn = module.default
+        fn()
+    }, () =&amp;gt; {
+        console.log(&#39;模块加载错误&#39;)
+    })
+}
+//用 import() 加载文件，然后得到一个 promise.then(成功,失败)
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>闭包</title>
       <link>http://localhost:1313/post/seventeenh/</link>
       <pubDate>Sat, 11 Apr 2020 23:03:08 +0800</pubDate>
