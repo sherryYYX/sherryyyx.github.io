@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 12 Apr 2020 22:24:01 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 17:05:14 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析 Vue 两个版本的区别和使用方法</title>
+      <link>http://localhost:1313/post/nineteenth/</link>
+      <pubDate>Mon, 13 Apr 2020 17:05:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/nineteenth/</guid>
+      <description>一、两个版本对应的文件名 二、template 和 render 怎么用 Vue 完整版 &amp;lt;template&amp;gt;的使用方法，写在 html页面里或者js里 &amp;lt;template&amp;gt; &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;</description>
+    </item>
     
     <item>
       <title>webpack</title>

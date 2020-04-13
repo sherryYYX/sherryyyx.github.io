@@ -32,6 +32,48 @@
     </item>
     
     <item>
+      <title>浅析 Vue 两个版本的区别和使用方法</title>
+      <link>http://localhost:1313/post/nineteenth/</link>
+      <pubDate>Mon, 13 Apr 2020 17:05:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/nineteenth/</guid>
+      
+        <description>&lt;h2 id=&#34;一两个版本对应的文件名&#34;&gt;一、两个版本对应的文件名&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/img/19st_img/Vue%E4%B8%A4%E7%89%88%E5%8C%BA%E5%88%AB.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二template-和-render-怎么用&#34;&gt;二、template 和 render 怎么用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Vue 完整版 &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;的使用方法，写在 &lt;code&gt;html&lt;/code&gt;页面里或者&lt;code&gt;js&lt;/code&gt;里&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div id=&amp;quot;app&amp;quot;&amp;gt;
+  {{n}}
+    &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;+1&amp;lt;/button&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;code&gt;render&lt;/code&gt;在非完整版里的使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;render(h){ 
+     return h(&#39;div&#39;, [this.n,h（&#39;{on:{click:this.add}’,&#39;+1&#39;])
+ } //h相当于 creatElement,用h去创建实例
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;还有一种方法：Vue单文件组件
+是把&lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt;,·&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;,&lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;都写在&lt;code&gt;Xxx.vue&lt;/code&gt;文件里，vue-loader 会自动将其转成对象，之后我们在js文件里&lt;code&gt;import&lt;/code&gt;,并且&lt;code&gt; new Vue()&lt;/code&gt; 将其实例化
+&lt;pre&gt;&lt;code&gt;new Vue({
+     el:&#39;#app&#39;,
+     render(h){
+      return h(Xxx)
+     }
+ })
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;三、教读者如何用 &lt;code&gt;codesandbox.io&lt;/code&gt; 写 Vue 代码
+进入网站首页 ⇒ 点击create(不要登录) ⇒ 选择Vue ⇒ 自动生成相关文件，直接用&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>webpack</title>
       <link>http://localhost:1313/post/eighteenth/</link>
       <pubDate>Sun, 12 Apr 2020 22:24:01 +0800</pubDate>
