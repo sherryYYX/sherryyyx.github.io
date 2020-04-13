@@ -339,6 +339,37 @@
   <header class="post-header">
     <h1 class="post-title">
       
+      <a class="post-link" href="/post/20st/">浅析 JS 的继承</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2020-04-13" class="post-time">
+        2020-04-13
+      </time>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      一、原型的继承 function superType(name){ this.name = name; } superType.prototype.sayName = function(){ console.log(this.name) } function subType(name,age){ // 继承属性 superType.call(this,name); this.age = age; } // 继承方法 subType.prototype = new superType(); subType.prototype.sayAge = function(){ console.log(this.age) } // subType 实例 同时拥有 name，age属性，sayName
+    </div>
+    <div class="read-more">
+      <a href="/post/20st/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
       <a class="post-link" href="/post/nineteenth/">浅析 Vue 两个版本的区别和使用方法</a>
     </h1>
     
@@ -397,37 +428,6 @@
 </article>
 
   
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/seventeenh/">闭包</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2020-04-11" class="post-time">
-        2020-04-11
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      一、闭包是：一个函数用到了外部变量，那么函数+变量就是闭包。 function f1() { let a = 1; function f2() { console.log(a) } f2() } f1() //其中的变量a和函数f2就是闭包 二、闭包的用途是
-    </div>
-    <div class="read-more">
-      <a href="/post/seventeenh/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-  
 </section>
 
 
@@ -475,6 +475,10 @@
       
       <li >
         <a href="/page/6/">6</a>
+      </li>
+      
+      <li >
+        <a href="/page/7/">7</a>
       </li>
       
     </ul>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Apr 2020 17:05:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 23:04:18 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析 JS 的继承</title>
+      <link>http://localhost:1313/post/20st/</link>
+      <pubDate>Mon, 13 Apr 2020 23:04:18 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/20st/</guid>
+      <description>一、原型的继承 function superType(name){ this.name = name; } superType.prototype.sayName = function(){ console.log(this.name) } function subType(name,age){ // 继承属性 superType.call(this,name); this.age = age; } // 继承方法 subType.prototype = new superType(); subType.prototype.sayAge = function(){ console.log(this.age) } // subType 实例 同时拥有 name，age属性，sayName</description>
+    </item>
     
     <item>
       <title>浅析 Vue 两个版本的区别和使用方法</title>

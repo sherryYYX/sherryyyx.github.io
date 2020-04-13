@@ -32,6 +32,70 @@
     </item>
     
     <item>
+      <title>浅析 JS 的继承</title>
+      <link>http://localhost:1313/post/20st/</link>
+      <pubDate>Mon, 13 Apr 2020 23:04:18 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/20st/</guid>
+      
+        <description>&lt;h2 id=&#34;一原型的继承&#34;&gt;一、原型的继承&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;function superType(name){
+	this.name = name;
+}
+superType.prototype.sayName = function(){
+	console.log(this.name)
+}
+
+function subType(name,age){
+        // 继承属性
+	superType.call(this,name);
+	this.age = age;
+}
+
+// 继承方法
+subType.prototype = new superType();
+
+subType.prototype.sayAge = function(){
+	console.log(this.age)
+}
+
+// subType 实例 同时拥有 name，age属性，sayName sayAge方法
+var Alias = new subType(&amp;quot;Alias&amp;quot;,18)
+Alias.sayName(); // &amp;quot;Alias&amp;quot;
+Alias.sayAge()   // 18
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;二class-的继承&#34;&gt;二、class 的继承&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;class SuperType {
+   // constructor
+   constructor(name){
+       this.name = name;
+   }
+   // getter
+   get city(){
+      return &amp;quot;ShangHai&amp;quot;
+   }
+   // Methods
+   sayName(){
+      console.log(this.name)	
+   }
+}
+
+class SubType extends SuperType{
+   constructor(name,age){
+      // 继承属性
+      super(name);
+      this.age = age;
+   }
+   sayAge(){
+      console.log(this.age); 
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>浅析 Vue 两个版本的区别和使用方法</title>
       <link>http://localhost:1313/post/nineteenth/</link>
       <pubDate>Mon, 13 Apr 2020 17:05:14 +0800</pubDate>
