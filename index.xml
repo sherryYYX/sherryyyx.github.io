@@ -67,8 +67,16 @@
  })
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;三、教读者如何用 &lt;code&gt;codesandbox.io&lt;/code&gt; 写 Vue 代码
-进入网站首页 ⇒ 点击create(不要登录) ⇒ 选择Vue ⇒ 自动生成相关文件，直接用&lt;/p&gt;
+&lt;h4 id=&#34;建议&#34;&gt;建议&lt;/h4&gt;
+&lt;p&gt;使用非完整版，配合Vue-loader,就是Vue单文件组件&lt;/p&gt;
+&lt;h5 id=&#34;优点&#34;&gt;优点&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;利于用户体验，用户下载的js文件小，但只支持h函数&lt;/li&gt;
+&lt;li&gt;利于开发体验，在vue文件里写html标签，不写h函数&lt;/li&gt;
+&lt;li&gt;麻烦事让loader做，vue-loader把vue文件里的html转化为h函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三教读者如何用-codesandboxio-写-vue-代码&#34;&gt;三、教读者如何用 &lt;code&gt;codesandbox.io&lt;/code&gt; 写 Vue 代码&lt;/h2&gt;
+&lt;p&gt;进入网站首页 ⇒ 点击create(不要登录) ⇒ 选择Vue ⇒ 自动生成相关文件，直接用&lt;/p&gt;
 </description>
       
     </item>
