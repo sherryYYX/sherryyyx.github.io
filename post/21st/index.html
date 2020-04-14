@@ -69,7 +69,7 @@
 <meta itemprop="description" content="一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函">
 <meta itemprop="datePublished" content="2020-04-14T20:38:42&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-14T20:38:42&#43;08:00" />
-<meta itemprop="wordCount" content="475">
+<meta itemprop="wordCount" content="722">
 
 
 
@@ -371,7 +371,12 @@
         <li><a href="#有五类属性">有五类属性</a></li>
       </ul>
     </li>
-    <li><a href="#三外部属性props">三、外部属性（props）</a></li>
+    <li><a href="#三vue组件data为什么必须是函数">三、vue组件data为什么必须是函数</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#四外部属性props">四、外部属性（props）</a></li>
   </ul>
 </nav>
   </div>
@@ -418,7 +423,30 @@
 4. provide(提供)
 5. inject（注入）
 </code></pre>
-<h2 id="三外部属性props">三、外部属性（props）</h2>
+<h2 id="三vue组件data为什么必须是函数">三、vue组件data为什么必须是函数</h2>
+<pre><code>new  Vue({
+    el: '#app',
+    template: `&lt;div&gt;{{demo}}&lt;/div&gt;`,
+    data: {
+        demo: 123
+    }
+})
+</code></pre><p>在 new Vue中，data写成对象和函数都可以，再组件中，为什么data一定是函数</p>
+<pre><code>const Component = function() {};
+Component.prototype.data = {
+    demo: 123
+}
+var component1 = new Component();
+var component2 = new Component();
+component1.data.demo = 456;
+console.log(component2.data.demo); // 456
+</code></pre><h4 id="解释">解释</h4>
+<ul>
+<li><code>component1</code>和<code>component2</code>都引用同一个对象，<code>component1</code>变成456，那么<code>component2</code>也变成456。</li>
+<li>组件的实例化，引用同一对象，如果data是对象，一旦修改其中一个组件数据，另一个也跟着变。</li>
+<li>但是如果data是函数，Vue组件的data因为是函数有了作用域，互不干扰。</li>
+</ul>
+<h2 id="四外部属性props">四、外部属性（props）</h2>
 <p><img src="/img/21st_img/21st_2.png" alt="img">
 <img src="/img/21st_img/21st_3.png" alt="img"></p>
 

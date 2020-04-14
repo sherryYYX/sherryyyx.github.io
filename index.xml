@@ -77,7 +77,30 @@
 4. provide(提供)
 5. inject（注入）
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;三外部属性props&#34;&gt;三、外部属性（props）&lt;/h2&gt;
+&lt;h2 id=&#34;三vue组件data为什么必须是函数&#34;&gt;三、vue组件data为什么必须是函数&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;new  Vue({
+    el: &#39;#app&#39;,
+    template: `&amp;lt;div&amp;gt;{{demo}}&amp;lt;/div&amp;gt;`,
+    data: {
+        demo: 123
+    }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在 new Vue中，data写成对象和函数都可以，再组件中，为什么data一定是函数&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;const Component = function() {};
+Component.prototype.data = {
+    demo: 123
+}
+var component1 = new Component();
+var component2 = new Component();
+component1.data.demo = 456;
+console.log(component2.data.demo); // 456
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;解释&#34;&gt;解释&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;component1&lt;/code&gt;和&lt;code&gt;component2&lt;/code&gt;都引用同一个对象，&lt;code&gt;component1&lt;/code&gt;变成456，那么&lt;code&gt;component2&lt;/code&gt;也变成456。&lt;/li&gt;
+&lt;li&gt;组件的实例化，引用同一对象，如果data是对象，一旦修改其中一个组件数据，另一个也跟着变。&lt;/li&gt;
+&lt;li&gt;但是如果data是函数，Vue组件的data因为是函数有了作用域，互不干扰。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四外部属性props&#34;&gt;四、外部属性（props）&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/21st_img/21st_2.png&#34; alt=&#34;img&#34;&gt;
 &lt;img src=&#34;http://localhost:1313/img/21st_img/21st_3.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
 </description>
