@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Apr 2020 23:04:18 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 20:38:42 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue 构造选项(一)</title>
+      <link>http://localhost:1313/post/21st/</link>
+      <pubDate>Tue, 14 Apr 2020 20:38:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/21st/</guid>
+      <description>一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函</description>
+    </item>
     
     <item>
       <title>浅析 JS 的继承</title>

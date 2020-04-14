@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>小王子的博客</title>
+  <title>Vue 构造选项(一) - 小王子的博客</title>
   
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -25,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="小王子" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -36,8 +35,8 @@
 <meta name="generator" content="Hugo 0.66.0" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="小王子的博客" />
+<link rel="canonical" href="http://localhost:1313/post/21st/" />
+
 
 
 
@@ -60,15 +59,23 @@
 
 
 
-<meta property="og:title" content="小王子的博客" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-<meta property="og:updated_time" content="2017-08-20T21:38:52+08:00" />
-<meta itemprop="name" content="小王子的博客">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="小王子的博客"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="Vue 构造选项(一)" />
+<meta property="og:description" content="一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/21st/" />
+<meta property="article:published_time" content="2020-04-14T20:38:42+08:00" />
+<meta property="article:modified_time" content="2020-04-14T20:38:42+08:00" />
+<meta itemprop="name" content="Vue 构造选项(一)">
+<meta itemprop="description" content="一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函">
+<meta itemprop="datePublished" content="2020-04-14T20:38:42&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-14T20:38:42&#43;08:00" />
+<meta itemprop="wordCount" content="473">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vue 构造选项(一)"/>
+<meta name="twitter:description" content="一、Vue实例 总结 把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用 vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新 vm 的构造函"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -235,7 +242,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -327,169 +334,160 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
-  
-  
+          <article class="post bg-white">
     
-  
-  
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">Vue 构造选项(一)</h1>
       
-      <a class="post-link" href="/post/eighteenth/">webpack</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2020-04-14" class="post-time">
+          2020-04-14
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2020-04-12" class="post-time">
-        2020-04-12
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      webpack webpack 中的 loader 和 plugin 区别是什么？ 一、 loader 是加载器 plugin 是插件 二、用途 加载器用来加载文件 例如： babel loader用来加载高级js，将其变成低版本支持的js。 css
-    </div>
-    <div class="read-more">
-      <a href="/post/eighteenth/" class="read-more-link">阅读全文</a>
-    </div>
-    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一vue实例">一、Vue实例</a>
+      <ul>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+    <li><a href="#二参数-option-里有什么">二、参数 option 里有什么</a>
+      <ul>
+        <li><a href="#有五类属性">有五类属性</a></li>
+      </ul>
+    </li>
+    <li><a href="#三外部属性props">三、外部属性（props）</a></li>
+  </ul>
+</nav>
   </div>
-</article>
+</div>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/seventeenh/">闭包</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2020-04-11" class="post-time">
-        2020-04-11
-      </time>
-      
-      
-      
-      
+    <div class="post-content">
+      <h2 id="一vue实例">一、Vue实例</h2>
+<p><img src="/img/21st_img/21st.png" alt="img"></p>
+<h3 id="总结">总结</h3>
+<ul>
+<li>把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用</li>
+<li>vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新</li>
+<li>vm 的构造函数是Vue，按照ES6的说法，vm所属的类是Vue</li>
+<li>option是new Vue的参数，一般称之为选项和构造选项</li>
+</ul>
+<h2 id="二参数-option-里有什么">二、参数 option 里有什么</h2>
+<h3 id="有五类属性">有五类属性</h3>
+<ol>
+<li>数据：data、props(外部属性)、computed、methods、watch</li>
+<li>DOM：el（用模板替换页面哪一块，容器）
+* template(html 内容)完整版
+* render(渲染) 非完整版
+* 二选一</li>
+<li>生命周期钩子
+(1)  beforeCreate(生之前)、created(生之后)
+(2)  beforeMount(挂之前)、mounted(挂之后)
+(3)  beforeUpdate(更新之前)、updated(更新之后)
+(4)  activated、 deactivated
+(5)  beforeDestroy(死之前)、destroyed(死之后)</li>
+<li>资源
+directives(指令)
+filters（过滤）
+components(组件)</li>
+<li>组合
+parent
+mixins(混入)
+extends(扩展)
+provide(提供)
+inject（注入）</li>
+</ol>
+<h2 id="三外部属性props">三、外部属性（props）</h2>
+<p><img src="/img/tenth_img/2.png" alt="img">
+<img src="/img/tenth_img/3.png" alt="img"></p>
+
     </div>
-  </header>
-  
-  <div class="post-content">
+
     
-    <div class="post-summary">
-      一、闭包是：一个函数用到了外部变量，那么函数+变量就是闭包。 function f1() { let a = 1; function f2() { console.log(a) } f2() } f1() //其中的变量a和函数f2就是闭包 二、闭包的用途是
-    </div>
-    <div class="read-more">
-      <a href="/post/seventeenh/" class="read-more-link">阅读全文</a>
-    </div>
     
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">小王子</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2020-04-14
       
-      <a class="post-link" href="/post/sixteenth/">浅析 MVC</a>
-    </h1>
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
     
-    <div class="post-meta">
-      <time datetime="2020-04-11" class="post-time">
-        2020-04-11
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      1. MVC 三个对象分别做什么 每个模块都可以写成三个对象，分别是 M —— Model 数据类型 负责操作所有数据 V —— View 视图 负责所有UI界面 C —— Controller 控制器 负责其他 代
-    </div>
-    <div class="read-more">
-      <a href="/post/sixteenth/" class="read-more-link">阅读全文</a>
-    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/20st/">
+            <span class="next-text nav-default">浅析 JS 的继承</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  </div>
-</article>
 
   
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/page/6/">6</a>
-      </li>
-      
-      <li >
-        <a href="/page/7/">7</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>

@@ -32,6 +32,54 @@
     </item>
     
     <item>
+      <title>Vue 构造选项(一)</title>
+      <link>http://localhost:1313/post/21st/</link>
+      <pubDate>Tue, 14 Apr 2020 20:38:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/21st/</guid>
+      
+        <description>&lt;h2 id=&#34;一vue实例&#34;&gt;一、Vue实例&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/21st_img/21st.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;把 Vue 的实例命名为vm是尤雨溪的习惯，我们应该沿用&lt;/li&gt;
+&lt;li&gt;vm 对象封装了对视图的所有操作，包括数据读写、事件绑定、DOM更新&lt;/li&gt;
+&lt;li&gt;vm 的构造函数是Vue，按照ES6的说法，vm所属的类是Vue&lt;/li&gt;
+&lt;li&gt;option是new Vue的参数，一般称之为选项和构造选项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;二参数-option-里有什么&#34;&gt;二、参数 option 里有什么&lt;/h2&gt;
+&lt;h3 id=&#34;有五类属性&#34;&gt;有五类属性&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;数据：data、props(外部属性)、computed、methods、watch&lt;/li&gt;
+&lt;li&gt;DOM：el（用模板替换页面哪一块，容器）
+* template(html 内容)完整版
+* render(渲染) 非完整版
+* 二选一&lt;/li&gt;
+&lt;li&gt;生命周期钩子
+(1)  beforeCreate(生之前)、created(生之后)
+(2)  beforeMount(挂之前)、mounted(挂之后)
+(3)  beforeUpdate(更新之前)、updated(更新之后)
+(4)  activated、 deactivated
+(5)  beforeDestroy(死之前)、destroyed(死之后)&lt;/li&gt;
+&lt;li&gt;资源
+directives(指令)
+filters（过滤）
+components(组件)&lt;/li&gt;
+&lt;li&gt;组合
+parent
+mixins(混入)
+extends(扩展)
+provide(提供)
+inject（注入）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;三外部属性props&#34;&gt;三、外部属性（props）&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/tenth_img/2.png&#34; alt=&#34;img&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/img/tenth_img/3.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>浅析 JS 的继承</title>
       <link>http://localhost:1313/post/20st/</link>
       <pubDate>Mon, 13 Apr 2020 23:04:18 +0800</pubDate>
@@ -1206,26 +1254,6 @@ xxxxxxxxx //主题下载地址
 之子于归，宜其家室。&lt;/p&gt;
 &lt;p&gt;桃之夭夭，其叶蓁蓁。
 之子于归，宜其家人。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>第一篇文章</title>
-      <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Tue, 10 Mar 2020 13:14:14 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      
-        <description>&lt;h1 id=&#34;大家好这里是小王子的博客&#34;&gt;大家好，这里是小王子的博客&lt;/h1&gt;
-&lt;h2 id=&#34;自我介绍&#34;&gt;自我介绍&lt;/h2&gt;
-&lt;p&gt;我的爱好&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;看书&lt;/li&gt;
-&lt;li&gt;电影&lt;/li&gt;
-&lt;li&gt;篮球&lt;/li&gt;
-&lt;li&gt;学习&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       
     </item>
