@@ -32,6 +32,121 @@
     </item>
     
     <item>
+      <title>浅析 Vue 数据响应式</title>
+      <link>http://localhost:1313/post/22st/</link>
+      <pubDate>Wed, 15 Apr 2020 14:55:14 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/22st/</guid>
+      
+        <description>&lt;h2 id=&#34;一什么是响应式&#34;&gt;一、什么是响应式&lt;/h2&gt;
+&lt;p&gt;一个物体受到外界的刺激，做出相应反应，就是响应式。&lt;/p&gt;
+&lt;h2 id=&#34;二vue-的-data-是响应式的&#34;&gt;二、Vue 的 data 是响应式的&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;const vm = new Vue({
+    data:{n:0}
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;如果修改&lt;code&gt;vm.n&lt;/code&gt;,那么UI中的n就会相应我。&lt;/li&gt;
+&lt;li&gt;Vue2通过&lt;code&gt;Object.definedProperty&lt;/code&gt;来实现数据响应式。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;三objectdefinedproperty-是什么&#34;&gt;三、Object.definedProperty 是什么&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Object.definedProperty&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以给对象添加属性、value&lt;/li&gt;
+&lt;li&gt;可以给对象添加getter和Setter&lt;/li&gt;
+&lt;li&gt;getter和Setter用于对属性的读写进行监控&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;用法&#34;&gt;用法&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;let obj = {
+    姓:&#39;高&#39;,
+    名: &#39;圆圆&#39;,
+    get 姓名() {
+        return this.姓+this.名
+    },
+    set 姓名(xxx) {
+        this.姓 = xxx[0],
+        this.名 = xxx.substring(1)
+    }      
+}
+
+let _xxx = 0
+
+Object.defineProperty(obj, &#39;xxx&#39;, {
+    get() {
+       return _xxx
+    },
+    set(value) {
+        return _xxx = value 
+    }
+})
+obj.姓名 = &#39;刘诗诗&#39;
+console.log(obj)//{姓: &amp;quot;刘&amp;quot;, 名: &amp;quot;诗诗&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;四objectdefinedproperty-有一个问题&#34;&gt;四、Object.definedProperty 有一个问题&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Object.definedProperty(obj,&#39;n&#39;,{...})&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;必须有一个&amp;rsquo;n&amp;rsquo;,才能监听或代理obj.n&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;new Vue({
+    data: {
+        obj: {
+           a:0 //obj.a 会被Vue监听
+       }
+    },
+    template: `
+    &amp;lt;div&amp;gt;
+    {{obj.b}}
+    &amp;lt;button @click=&amp;quot;setB&amp;quot;&amp;gt;set b&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+    `,
+    methods: {
+        setB() {
+            this.obj.b=1 //页面不会显示1，因为data里没有b
+        }
+    }
+}).$mount(&#39;#app&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;二怎么解决这问题&#34;&gt;（二）怎么解决这问题&lt;/h3&gt;
+&lt;h4 id=&#34;1-把要用的key提前声明好&#34;&gt;1 把要用的key提前声明好&lt;/h4&gt;
+&lt;h4 id=&#34;2-使用vueset或thisset&#34;&gt;2 使用&lt;code&gt;Vue.set&lt;/code&gt;或&lt;code&gt;this.$set&lt;/code&gt;&lt;/h4&gt;
+&lt;h5 id=&#34;作用&#34;&gt;作用&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;新增key&lt;/li&gt;
+&lt;li&gt;自动创建代理和监听&lt;/li&gt;
+&lt;li&gt;触发UI更新&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;示例&#34;&gt;示例&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;this.$set(this.object,&#39;m&#39;,100)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;五data中有数组&#34;&gt;五、data中有数组&lt;/h2&gt;
+&lt;h3 id=&#34;1-没有办法提前声明key&#34;&gt;1 没有办法提前声明key&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;数组的长度可以一直增加，下标就是key&lt;/li&gt;
+&lt;li&gt;所有只剩第二种方法，用set。&lt;/li&gt;
+&lt;li&gt;但是，我们不能每次都用&lt;code&gt;Vue.set&lt;/code&gt;，数组里的key也许会很多&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-因此尤雨溪篡改了数组api七个变异方法&#34;&gt;2 因此尤雨溪篡改了数组API，七个变异方法&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;push()&lt;/li&gt;
+&lt;li&gt;pop()&lt;/li&gt;
+&lt;li&gt;shift()&lt;/li&gt;
+&lt;li&gt;unshift()&lt;/li&gt;
+&lt;li&gt;splice()&lt;/li&gt;
+&lt;li&gt;sort()&lt;/li&gt;
+&lt;li&gt;reverse()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;小结&#34;&gt;小结&lt;/h4&gt;
+&lt;p&gt;这7个API都会被Vue篡改，调用后回更新UI&lt;/p&gt;
+&lt;h2 id=&#34;六总结&#34;&gt;六、总结&lt;/h2&gt;
+&lt;h3 id=&#34;1-对象中新增的key&#34;&gt;1 对象中新增的key&lt;/h3&gt;
+&lt;p&gt;Vue没有办法事先监听，可以提前写好key，或者用set来新增key，更新UI&lt;/p&gt;
+&lt;h3 id=&#34;2-数组中新增key&#34;&gt;2 数组中新增key&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;可以用set&lt;/li&gt;
+&lt;li&gt;但是最好用尤雨溪篡改的7个API，更方便。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>Vue 构造选项(一)</title>
       <link>http://localhost:1313/post/21st/</link>
       <pubDate>Tue, 14 Apr 2020 20:38:42 +0800</pubDate>
@@ -1264,24 +1379,6 @@ xxxxxxxxx //主题下载地址
 &lt;/ol&gt;
 &lt;h2 id=&#34;说明&#34;&gt;说明&lt;/h2&gt;
 &lt;p&gt;具体操作参照hugo官方文档&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>第二篇文章</title>
-      <link>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Tue, 10 Mar 2020 13:33:09 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      
-        <description>&lt;h1 id=&#34;桃夭-诗经&#34;&gt;《桃夭》 诗经&lt;/h1&gt;
-&lt;p&gt;桃之夭夭，灼灼其华。
-之子于归，宜其室家。&lt;/p&gt;
-&lt;p&gt;桃之夭夭，有蕡其实。
-之子于归，宜其家室。&lt;/p&gt;
-&lt;p&gt;桃之夭夭，其叶蓁蓁。
-之子于归，宜其家人。&lt;/p&gt;
 </description>
       
     </item>
