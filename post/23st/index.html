@@ -69,7 +69,7 @@
 <meta itemprop="description" content="computed 和 watch 的区别 一、 computed 是用来计算属性 watch 是用来监听 二、 （一）computed computed是用来计算一个值，如果调用它，不需要加括号 computed 会根据依赖">
 <meta itemprop="datePublished" content="2020-04-16T20:18:45&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-16T20:18:45&#43;08:00" />
-<meta itemprop="wordCount" content="389">
+<meta itemprop="wordCount" content="421">
 
 
 
@@ -442,7 +442,8 @@ watch: {b: [f1,f2]}
 watch: {c: 'methodName'}
 //到methods里找对应名字函数
 watch: {d: {handler:fn, deep:true, immediate:true}}
-</code></pre><h6 id="第二种">第二种</h6>
+</code></pre><p>不要用箭头函数来定义 watch 函数，箭头函数的this指的是window</p>
+<h6 id="第二种">第二种</h6>
 <p><code>vm.$watch('n', function(){}, {immediate: true})</code>
 //&lsquo;n'可以改为一个返回字符串的函数</p>
 <h3 id="三总结">三、总结</h3>

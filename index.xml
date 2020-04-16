@@ -105,7 +105,8 @@ watch: {b: [f1,f2]}
 watch: {c: &#39;methodName&#39;}
 //到methods里找对应名字函数
 watch: {d: {handler:fn, deep:true, immediate:true}}
-&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;第二种&#34;&gt;第二种&lt;/h6&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;不要用箭头函数来定义 watch 函数，箭头函数的this指的是window&lt;/p&gt;
+&lt;h6 id=&#34;第二种&#34;&gt;第二种&lt;/h6&gt;
 &lt;p&gt;&lt;code&gt;vm.$watch(&#39;n&#39;, function(){}, {immediate: true})&lt;/code&gt;
 //&amp;lsquo;n&#39;可以改为一个返回字符串的函数&lt;/p&gt;
 &lt;h3 id=&#34;三总结&#34;&gt;三、总结&lt;/h3&gt;
