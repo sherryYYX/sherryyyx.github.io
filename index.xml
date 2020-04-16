@@ -50,13 +50,69 @@
 &lt;li&gt;computed是用来计算一个值，如果调用它，不需要加括号&lt;/li&gt;
 &lt;li&gt;computed 会根据依赖自动缓存&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;二-watch&#34;&gt;（二） watch&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;new Vue({
+    data: {
+        user: {
+            email: &amp;quot;fangfang@qq.com&amp;quot;,
+            nickname: &amp;quot;方方&amp;quot;,
+            phone: &amp;quot;2344555667&amp;quot;
+        }
+    },
+    computed: {
+        displayName: {
+            get() {
+                const user = this.user;
+                return user.nickname || user.email || user.phone;
+            },
+            set(value) {
+                console.log(value);
+                this.user.nickname = value;
+            }
+        }
+    },
+
+    // 用 computed 来计算 displayName
+    template: `
+    &amp;lt;div&amp;gt;
+      {{displayName}}
+      &amp;lt;div&amp;gt;
+      {{displayName}}
+      &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;set&amp;lt;/button&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  `,
+    methods: {
+        add() {
+            console.log(&amp;quot;add&amp;quot;);
+            this.displayName = &amp;quot;圆圆&amp;quot;;
+        }
+    }
+}).$mount(&amp;quot;#app&amp;quot;);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;二-watch&#34;&gt;（二） watch&lt;/h4&gt;
 &lt;h5 id=&#34;watch-有两个选项&#34;&gt;watch 有两个选项&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;immediate 表示是否在第一次渲染时执行fn&lt;/li&gt;
 &lt;li&gt;deep 如果监听一个对象，是否要看该对象里面的属性变化。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h5 id=&#34;如果某个属性变化了就执行fn&#34;&gt;如果某个属性变化了，就执行fn&lt;/h5&gt;
+&lt;h5 id=&#34;watch-的语法&#34;&gt;watch 的语法&lt;/h5&gt;
+&lt;h6 id=&#34;第一种&#34;&gt;第一种&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;watch: {a: function (newVal, oldVal) {}} || watch: {a() {}}
+//第二个是第一个的缩写
+watch: {b: [f1,f2]}
+//在b变化时，依次执行f1,f2
+watch: {c: &#39;methodName&#39;}
+//到methods里找对应名字函数
+watch: {d: {handler:fn, deep:true, immediate:true}}
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;第二种&#34;&gt;第二种&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;vm.$watch(&#39;n&#39;, function(){}, {immediate: true})&lt;/code&gt;
+//&amp;lsquo;n&#39;可以改为一个返回字符串的函数&lt;/p&gt;
+&lt;h3 id=&#34;三总结&#34;&gt;三、总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;如果一个数据需要经过复杂计算就用 computed&lt;/li&gt;
+&lt;li&gt;如果一个数据需要被监听并且对数据做一些操作就用 watch&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
