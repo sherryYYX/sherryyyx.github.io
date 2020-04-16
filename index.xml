@@ -32,6 +32,36 @@
     </item>
     
     <item>
+      <title>computed 和 watch 的区别</title>
+      <link>http://localhost:1313/post/23st/</link>
+      <pubDate>Thu, 16 Apr 2020 20:18:45 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/23st/</guid>
+      
+        <description>&lt;h2 id=&#34;computed-和-watch-的区别&#34;&gt;computed 和 watch 的区别&lt;/h2&gt;
+&lt;h3 id=&#34;一&#34;&gt;一、&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;computed 是用来计算属性&lt;/li&gt;
+&lt;li&gt;watch 是用来监听&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二&#34;&gt;二、&lt;/h3&gt;
+&lt;h4 id=&#34;一computed&#34;&gt;（一）computed&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;computed是用来计算一个值，如果调用它，不需要加括号&lt;/li&gt;
+&lt;li&gt;computed 会根据依赖自动缓存&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;二-watch&#34;&gt;（二） watch&lt;/h4&gt;
+&lt;h5 id=&#34;watch-有两个选项&#34;&gt;watch 有两个选项&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;immediate 表示是否在第一次渲染时执行fn&lt;/li&gt;
+&lt;li&gt;deep 如果监听一个对象，是否要看该对象里面的属性变化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;如果某个属性变化了就执行fn&#34;&gt;如果某个属性变化了，就执行fn&lt;/h5&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>浅析 Vue 数据响应式</title>
       <link>http://localhost:1313/post/22st/</link>
       <pubDate>Wed, 15 Apr 2020 14:55:14 +0800</pubDate>
@@ -1309,76 +1339,6 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
 &lt;li&gt;quote(引用)&lt;/li&gt;
 &lt;li&gt;blockquote(块级引用)&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>第三篇文章</title>
-      <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      
-        <description>&lt;h1 id=&#34;如何用-hugo-搭建个人博客&#34;&gt;如何用 hugo 搭建个人博客&lt;/h1&gt;
-&lt;h2 id=&#34;mac-用户&#34;&gt;Mac 用户&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;安装hugo&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;brew install hugo
-hugo version
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;创建新的环境&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;hugo new site xxx.github.io-creator
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;添加主题&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;cd xxx.github.io-creator
-git init
-xxxxxxxxx //主题下载地址
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;设置主题名&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;echo echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;新建文章&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;hugo new post/my first page.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;写文章，将 &lt;code&gt;draft: true&lt;/code&gt; 改为 ``draft: false`&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;运行 &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;打开 http://localhost:1313/ ，会看到一个示例网站。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;配置好&lt;code&gt;config.toml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;文章写在&lt;code&gt;./content/post&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;运行&lt;code&gt;hugo -D&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;cd pablic/&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;git commit -v&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;说明&#34;&gt;说明&lt;/h2&gt;
-&lt;p&gt;具体操作参照hugo官方文档&lt;/p&gt;
 </description>
       
     </item>
