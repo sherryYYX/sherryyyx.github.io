@@ -9,14 +9,21 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/23st/</loc>
-    <lastmod>2020-04-16T20:18:45+08:00</lastmod>
+    <loc>http://localhost:1313/post/24st/</loc>
+    <lastmod>2020-04-17T15:03:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-04-17T15:03:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/23st/</loc>
     <lastmod>2020-04-16T20:18:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

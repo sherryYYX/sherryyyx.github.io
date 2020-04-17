@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 16 Apr 2020 20:18:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 15:03:58 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title> Vue 中的 .sync 修饰符</title>
+      <link>http://localhost:1313/post/24st/</link>
+      <pubDate>Fri, 17 Apr 2020 15:03:58 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/24st/</guid>
+      <description>一、什么是修饰符 有些指令支持修饰符 @click.stop=&amp;quot;add&amp;quot; 表示阻止事件传播/冒泡 @click.prevent=&amp;quot;add&amp;quot; 表示阻止默认动作 @keyPress.enter=&amp;quot;xxx&amp;quot; 表示按下回车键，就执行xxx @click.stop.prevent=&amp;quot;add&amp;quot; 同时表示两种意思 二、.sync 修</description>
+    </item>
     
     <item>
       <title>computed 和 watch 的区别</title>
@@ -180,15 +189,6 @@
       
       <guid>http://localhost:1313/post/fourth/</guid>
       <description>HTML 1.HTML 是谁发明的 李爵士 2.HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section</description>
-    </item>
-    
-    <item>
-      <title>第三篇文章</title>
-      <link>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Tue, 10 Mar 2020 13:52:40 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      <description>如何用 hugo 搭建个人博客 Mac 用户 安装hugo brew install hugo hugo version 创建新的环境 hugo new site xxx.github.io-creator 添加主题 cd xxx.github.io-creator git init xxxxxxxxx //主题下载地址 设置主题名 echo echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 新建文章 hugo new post/my</description>
     </item>
     
   </channel>
