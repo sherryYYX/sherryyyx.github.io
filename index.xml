@@ -94,7 +94,7 @@ A：监听这100个按钮的 祖先，等冒泡的时候判断 &lt;code&gt;targe
 &lt;h2 id=&#34;捕获与冒泡&#34;&gt;捕获与冒泡&lt;/h2&gt;
 &lt;p&gt;W3C标准
 首先 捕获 ，再冒泡
-&lt;img src=&#34;http://localhost:1313/static/img/25st_img/25st.png&#34; alt=&#34;捕获与冒泡&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/img/25st_img/25st.png&#34; alt=&#34;捕获与冒泡&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;事件绑定-api-addeventlistener&#34;&gt;事件绑定 API addEventListener&lt;/h2&gt;
 &lt;p&gt;W3C:
 &lt;code&gt;baba.addEventListener(&#39;click&#39;,fn,bool)&lt;/code&gt;&lt;/p&gt;
