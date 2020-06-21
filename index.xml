@@ -32,6 +32,93 @@
     </item>
     
     <item>
+      <title>请简述事件委托</title>
+      <link>http://localhost:1313/post/26st/</link>
+      <pubDate>Sun, 21 Jun 2020 19:41:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/26st/</guid>
+      
+        <description>&lt;h2 id=&#34;事件委托-例子&#34;&gt;事件委托 例子&lt;/h2&gt;
+&lt;p&gt;Q:你要给100 个按钮添加点击事件，怎么办？
+A：监听这100个按钮的 祖先，等冒泡的时候判断 &lt;code&gt;target&lt;/code&gt;  是不是这100个按钮中的一个。&lt;/p&gt;
+&lt;h3 id=&#34;优点&#34;&gt;优点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;省内存&lt;/li&gt;
+&lt;li&gt;可以监听动态元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;封装事件委托&#34;&gt;封装事件委托&lt;/h4&gt;
+&lt;p&gt;用函数 on(&amp;lsquo;click&amp;rsquo;,&#39;#testDiv&amp;rsquo;, &amp;lsquo;span&amp;rsquo;,fn)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&#39;testDiv&#39;&amp;gt;
+    &amp;lt;span&amp;gt;哈哈&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;用户点击“哈哈”，调用函数fn&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; function on (eventType, element,  selector, fn) {
+     if(!(element instanceOf Element)){
+        element=document.querySelector(element)
+     }
+    element.addEventListener(eventType, e =&amp;gt; {
+      let el = e.target
+      while (!el.matches(selector)) {
+        if (element === el) {
+          el = null
+          break
+        }
+        el = el.parentNode
+      }
+      el &amp;amp;&amp;amp; fn.call(el, e, el)
+    })
+    return element
+  },
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>简述 DOM 事件模型或 DOM 事件机制</title>
+      <link>http://localhost:1313/post/25st/</link>
+      <pubDate>Sat, 18 Apr 2020 23:03:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/25st/</guid>
+      
+        <description>&lt;p&gt;简述 DOM 事件模型或 DOM 事件机制
+请描述什么是捕获什么是冒泡，并说说是先捕获还是先冒泡，再搜搜看网上的文章怎么说&lt;/p&gt;
+&lt;h2 id=&#34;捕获&#34;&gt;捕获&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&#39;爷爷&#39;&amp;gt;
+    &amp;lt;div class=&#39;爸爸&#39;&amp;gt;
+        &amp;lt;div class=&#39;儿子&#39;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;捕获从 爷爷 =&amp;gt; 爸爸 =&amp;gt; 儿子 看有没有函数监听&lt;/p&gt;
+&lt;h2 id=&#34;冒泡&#34;&gt;冒泡&lt;/h2&gt;
+&lt;p&gt;冒泡从 儿子 =&amp;gt; 爸爸 =&amp;gt; 爷爷 看有没有函数监听&lt;/p&gt;
+&lt;h2 id=&#34;捕获与冒泡&#34;&gt;捕获与冒泡&lt;/h2&gt;
+&lt;p&gt;W3C标准
+首先 捕获 ，再冒泡
+&lt;img src=&#34;http://localhost:1313/static/img/25st_img/25st.png&#34; alt=&#34;捕获与冒泡&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;事件绑定-api-addeventlistener&#34;&gt;事件绑定 API addEventListener&lt;/h2&gt;
+&lt;p&gt;W3C:
+&lt;code&gt;baba.addEventListener(&#39;click&#39;,fn,bool)&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果不传bool值 默认为false，走冒泡&lt;/li&gt;
+&lt;li&gt;如果 bool 值为 true， 走捕获&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;target-与-currenttarget-区别&#34;&gt;target 与 currentTarget 区别&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;e.target&lt;/code&gt; 用户操作的元素
+&lt;code&gt;e.currentTarget&lt;/code&gt; 程序员监听的元素&lt;/p&gt;
+&lt;h5 id=&#34;举例&#34;&gt;举例&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
+    &amp;lt;span&amp;gt;你好&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当用户点击文字‘你好’，&lt;code&gt;e.target&lt;/code&gt; 是 span
+&lt;code&gt;e.currentTarget&lt;/code&gt; 就是 div&lt;/p&gt;
+&lt;h2 id=&#34;取消冒泡&#34;&gt;取消冒泡&lt;/h2&gt;
+&lt;p&gt;捕获不能取消，冒泡可以
+&lt;code&gt;e.stopPropagation&lt;/code&gt; 中断冒泡&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title> Vue 中的 .sync 修饰符</title>
       <link>http://localhost:1313/post/24st/</link>
       <pubDate>Fri, 17 Apr 2020 15:03:58 +0800</pubDate>
@@ -1220,154 +1307,6 @@ transition：属性名 时长 过渡方式 延迟&lt;/p&gt;
     }
 }
 &lt;/code&gt;&lt;/pre&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>简述 CSS 盒模型是什么</title>
-      <link>http://localhost:1313/post/sixth/</link>
-      <pubDate>Wed, 11 Mar 2020 20:43:16 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/sixth/</guid>
-      
-        <description>&lt;h2 id=&#34;简述-css-盒模型是什么&#34;&gt;简述 CSS 盒模型是什么&lt;/h2&gt;
-&lt;h3 id=&#34;css盒模型分为两种&#34;&gt;css盒模型分为两种&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;content box&lt;/li&gt;
-&lt;li&gt;boder box&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一个盒子由四部分组成&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;content 内容&lt;/li&gt;
-&lt;li&gt;padding 内边距&lt;/li&gt;
-&lt;li&gt;boder    边框&lt;/li&gt;
-&lt;li&gt;margin   外边距&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/1.png&#34; alt=&#34;两种盒模型&#34;&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>HTML常用标签</title>
-      <link>http://localhost:1313/post/fifth/</link>
-      <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/fifth/</guid>
-      
-        <description>&lt;h2 id=&#34;a-标签的用法&#34;&gt;a 标签的用法&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;属性&#34;&gt;属性&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;href&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;取值有网址、路径、伪协议&lt;/li&gt;
-&lt;li&gt;作用 跳到外部连接、内部锚点、邮箱电话&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;target&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;pre&gt;&lt;code&gt;  target=&amp;quot;_nblank&amp;quot; 在空白页打开
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;pre&gt;&lt;code&gt; target=&amp;quot;_top&amp;quot; 在顶级窗口打开
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;pre&gt;&lt;code&gt; target=&amp;quot;_parent&amp;quot; 在当前界面iframe的上一层打开
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;pre&gt;&lt;code&gt; target=&amp;quot;_self&amp;quot; 在自己页面
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;img-标签的用法&#34;&gt;img 标签的用法&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;img src=&amp;quot;dog.jpg&amp;quot; alt=&amp;quot;狗&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;发出get请求，展示图片&lt;/p&gt;
-&lt;h3 id=&#34;属性-1&#34;&gt;属性&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;alt：aternative 替换 当图片无法加载时，用于补救。&lt;/li&gt;
-&lt;li&gt;width/height：图片宽高&lt;/li&gt;
-&lt;li&gt;src：source 图片地址来源&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;table-标签的用法&#34;&gt;table 标签的用法&lt;/h2&gt;
-&lt;p&gt;分为三部分：&lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;table&amp;gt;
-        &amp;lt;thead&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
-                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
-                &amp;lt;th&amp;gt;表头&amp;lt;/th&amp;gt;
-            &amp;lt;/tr&amp;gt;
-        &amp;lt;/thead&amp;gt;
-        &amp;lt;tbody&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-        &amp;lt;/tbody&amp;gt;
-        &amp;lt;tfoot&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;内容&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-        &amp;lt;/tfoot&amp;gt;
-    &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;tr标签：table row 表行&lt;/li&gt;
-&lt;li&gt;th标签：table head 表头标题&lt;/li&gt;
-&lt;li&gt;td标签：table data 内容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;样式&#34;&gt;样式&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;table-layout : auto;  自动调节&lt;/li&gt;
-&lt;li&gt;border-collapse: collapse; 合并边框&lt;/li&gt;
-&lt;li&gt;border-spacing：0; 边框之间的距离&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;form-表单标签&#34;&gt;form 表单标签&lt;/h3&gt;
-&lt;p&gt;发get或post请求，然后刷新页面&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;form action=&amp;quot;/xxx&amp;quot; method=&amp;quot;POST&amp;quot;&amp;gt;
-        &amp;lt;input type=&amp;quot;text&amp;quot;&amp;gt;
-        &amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;
-    &amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;属性-2&#34;&gt;属性&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;action: 控制请求那个页面&lt;/li&gt;
-&lt;li&gt;method: 控制请求方式&lt;/li&gt;
-&lt;li&gt;autocomplete：自动填充&lt;/li&gt;
-&lt;li&gt;target： 同href&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&#34;input和button&#34;&gt;input和button&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;input 让用户输入，不能加其他&lt;/li&gt;
-&lt;li&gt;button 可以加其他（图片）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;input属性type&#34;&gt;input属性type&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;button&lt;/li&gt;
-&lt;li&gt;checkbox 多选&lt;/li&gt;
-&lt;li&gt;password&lt;/li&gt;
-&lt;li&gt;radio 单选&lt;/li&gt;
-&lt;li&gt;submit 提交&lt;/li&gt;
-&lt;li&gt;text&lt;/li&gt;
-&lt;li&gt;file 文件&lt;/li&gt;
-&lt;li&gt;hidden&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;其他输入标签textareaselectoption&#34;&gt;其他输入标签textarea、select+option&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;select name=&amp;quot;location&amp;quot; id=&amp;quot;1&amp;quot;&amp;gt;
-                &amp;lt;option value=&amp;quot;sh&amp;quot;&amp;gt;上海&amp;lt;/option&amp;gt;
-                &amp;lt;option value=&amp;quot;bj&amp;quot;&amp;gt;北京&amp;lt;/option&amp;gt;
-                &amp;lt;option value=&amp;quot;cd&amp;quot;&amp;gt;成都&amp;lt;/option&amp;gt;
-    &amp;lt;/select&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;注意&#34;&gt;注意&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;form 里面的input要有name&lt;/li&gt;
-&lt;li&gt;form 要有type=submit才能触发submit事件&lt;/li&gt;
-&lt;/ul&gt;
-</description>
       
     </item>
     

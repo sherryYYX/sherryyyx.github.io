@@ -6,10 +6,28 @@
     <description>Recent content in Posts on 小王子的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 17 Apr 2020 15:03:58 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 19:41:16 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>请简述事件委托</title>
+      <link>http://localhost:1313/post/26st/</link>
+      <pubDate>Sun, 21 Jun 2020 19:41:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/26st/</guid>
+      <description>事件委托 例子 Q:你要给100 个按钮添加点击事件，怎么办？ A：监听这100个按钮的 祖先，等冒泡的时候判断 target 是不是这100个按钮中的一个。 优点 省</description>
+    </item>
+    
+    <item>
+      <title>简述 DOM 事件模型或 DOM 事件机制</title>
+      <link>http://localhost:1313/post/25st/</link>
+      <pubDate>Sat, 18 Apr 2020 23:03:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/25st/</guid>
+      <description>简述 DOM 事件模型或 DOM 事件机制 请描述什么是捕获什么是冒泡，并说说是先捕获还是先冒泡，再搜搜看网上的文章怎么说 捕获 &amp;lt;div class=&#39;爷爷&#39;&amp;gt; &amp;lt;div</description>
+    </item>
     
     <item>
       <title> Vue 中的 .sync 修饰符</title>
@@ -171,24 +189,6 @@
       
       <guid>http://localhost:1313/post/sixth/</guid>
       <description>简述 CSS 盒模型是什么 css盒模型分为两种 content box boder box 一个盒子由四部分组成 content 内容 padding 内边距 boder 边框 margin 外边距</description>
-    </item>
-    
-    <item>
-      <title>HTML常用标签</title>
-      <link>http://localhost:1313/post/fifth/</link>
-      <pubDate>Tue, 10 Mar 2020 20:08:39 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/fifth/</guid>
-      <description>a 标签的用法 &amp;lt;a href=&amp;quot;//google.com&amp;quot;&amp;gt;超链接&amp;lt;/a&amp;gt; 属性 href 取值有网址、路径、伪协议 作用</description>
-    </item>
-    
-    <item>
-      <title>HTML入门笔记1</title>
-      <link>http://localhost:1313/post/fourth/</link>
-      <pubDate>Tue, 10 Mar 2020 15:16:07 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/fourth/</guid>
-      <description>HTML 1.HTML 是谁发明的 李爵士 2.HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 3.常用的表章节的标签有哪些，分别是什么意思（h1~h6、section</description>
     </item>
     
   </channel>
